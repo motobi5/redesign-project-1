@@ -109,12 +109,12 @@ font-weight: bold;
   background-color: red;
   bottom:2px;
   transition:0.3s;
-  left:50%;
+  left:0;
 }
 .topBar_right .menuBox ul li:hover >a::after {
   width: 100%;
-  left: 50%;
-  transform:translatex(-50%);
+  /* left: 50%;
+  transform:translatex(-50%); */
 }
 
 /* 2차아이템 */
@@ -227,7 +227,7 @@ position: absolute;
 padding:6px 8px;
 z-index: 10;
 position: relative;
-width: 120px;
+width: 130px;
 }
 .topBar .inner .mega  .megaMenu ul li a {
   font-size: 14px;
