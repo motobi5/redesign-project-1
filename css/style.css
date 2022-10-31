@@ -36,6 +36,7 @@ body, ul, li {
   /* transition: 0.3s; */
   position: fixed;
   top:0;
+  z-index: 999;
 }
 
 .topBar .inner {
@@ -44,6 +45,7 @@ display: flex;
 }
 .topBar .inner .logo {
 width: 280px;
+padding-left: 20px;
 text-align: center;
 align-self: center;
 /* border:3px solid gold; */
@@ -57,7 +59,7 @@ align-self: center;
   flex-direction: column;
   /* border:3px solid blue; */
 }
-/* 탑바_네비케이션바 */
+/* 탑바_네비게이션바 */
 .topBar_right .topBarTnb {
   /* border:3px solid red; */
   padding: 0 6px;
@@ -84,7 +86,7 @@ align-self: center;
   justify-content: end;
 }
 .topBar_right .menuBox ul li {
-padding: 14.5px 16px;
+padding: 14.5px 14px;
 transition:0.3s;
 }
 .topBar_right .menuBox ul li  {
@@ -126,7 +128,8 @@ position: absolute;
  left: 0;
  background-color:rgba(250, 250, 250, 0.98);
  /* border:3px solid red; */
- z-index: -1;
+ z-index: 99;
+ opacity: 0;
  visibility: hidden;
  transition: 0.3s;
  box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.1) ;
@@ -136,6 +139,7 @@ position: absolute;
  visibility:visible;
  height: 320px;
 }
+
 .topBar .inner .mega .bg-white {
   opacity: 0;
   visibility: hidden;
@@ -145,12 +149,12 @@ position: absolute;
   right:0;
   height:0;
   top:0;
-  z-index: -2;
+  z-index: -1;
   transition: 0.3s;
   /* border:3px solid blue; */
 }
 .topBar .inner .mega .bg-white.active {
-  opacity: 0.5;
+  opacity: 0.65;
   visibility: visible;
   height: 320px;
 }
@@ -160,14 +164,14 @@ position: absolute;
   display: flex;
   width: 100%;
   height: 0;
-  transition: 0.3s;
   position: absolute;
-  height: 0;
 }
-.topBar .inner .mega  .megaMenu.active {
+.topBar .inner .mega .megaMenu.active {
   opacity: 1;
   visibility: visible;
   height: 320px;
+  transition: 0.2s 0.3s;
+  /* 1초딜레이 후 트랜지션 작동하라 */
 } 
 /* 메가메뉴 왼쪽 */
 .topBar .inner .mega  .megaMenu > div {
@@ -178,13 +182,17 @@ position: absolute;
   justify-content: end;
 
 }
-.topBar .inner .mega  .megaMenu > div > .img-box {
-  
-  transition: 0.3s
+/* .topBar .inner .mega  .megaMenu > div > .img-box {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
 }
 .topBar .inner .mega  .megaMenu > div > .img-box.active {
+  opacity: 1;
+  visibility: visible;
   height: 290px;
-}
+} */
 
 .topBar .inner .mega  .megaMenu > div > .mega_sub_txt {
   display: flex;
@@ -227,7 +235,7 @@ position: absolute;
 padding:6px 8px;
 z-index: 10;
 position: relative;
-width: 130px;
+width: 160px;
 }
 .topBar .inner .mega  .megaMenu ul li a {
   font-size: 14px;
@@ -255,3 +263,161 @@ width: 130px;
 .topBar .inner .mega .megaMenu ul li:hover > a::after {
   width: 100%;
 }
+
+/* 빈공간 */
+.h80 {
+  height: 80px;
+}
+/* 메인슬라이드 */
+
+/* 메인색상 */
+:root {
+  --swiper-theme-color: red !important;
+  --swiper-pagination-color:red !important;
+}
+
+.slider-box-1 {
+  position:relative;
+  /* border:3px solid red; */
+  /* width: 200px;
+  z-index: -10; */
+}
+
+.slider-box-1 .swiper {
+  height:850px;
+  /* border:3px solid blue; */
+  /* width: 1200px; */
+}
+.slider-box-1 .swiper .swiper-wrapper {
+}
+.slider-box-1 .swiper .swiper-wrapper .swiper-slide {
+display: flex;
+justify-content: center;
+padding-top: 60px;
+}
+.slider-box-1 .swiper .swiper-wrapper .slide01 {
+  background-color: #111;;
+}
+
+.slider-box-1 .swiper .swiper-wrapper .slide02,
+.slider-box-1 .swiper .swiper-wrapper .slide03,
+.slider-box-1 .swiper .swiper-wrapper .slide04 {
+  background-color: white;
+}
+
+/* 네비게이션바 */
+.slider-box-1  .navi_bar {
+  position: absolute;
+  height: 80px;
+  width:100%;
+  /* border:3px solid green; */
+bottom: 0;
+background-color: rgba(0,0,0,0.2);
+z-index: 1;
+opacity: 0;
+visibility:hidden;
+transition: 0.3s;
+}
+.slider-box-1  .navi_bar.on {
+  opacity: 1;
+  visibility: visible;
+}
+/* 슬라이드버튼 */
+/* 슬라이드버튼 위치 */
+.slider-box-1 .navigation-wrapper {
+  /* border:3px solid gold; */
+  height:0;
+  width:1200px;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  padding: 0 20px;
+  align-items: center;
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform:translatex(-50%);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.slider-box-1 .navigation-wrapper.on {
+  opacity: 1;
+  visibility: visible;
+  height: 80px;
+}
+/* 슬라이드버튼 본체 */
+.slider-box-1 .swiper-button-prev,
+.slider-box-1 .swiper-button-next {
+  position:relative;
+  margin-bottom: 46px;
+  width: 46px;
+  border-radius: 555px;
+  transition: 0.3s;
+}
+.slider-box-1 .swiper-button-prev:hover,
+.slider-box-1 .swiper-button-next:hover {
+  background-color: #CF112B;
+}
+/* 슬라이드버튼 콘텐츠 */
+.slider-box-1 .swiper-button-prev::after{
+font-size: 18px;
+color:white;
+transition: 0.3s;
+position: absolute;
+left: 45%;
+top:50%;
+transform: translate(-45%, -50%);
+}
+.slider-box-1 .swiper-button-next::after {
+  font-size: 18px;
+color:white;
+transition: 0.3s;
+position: absolute;
+left: 55%;
+top:50%;
+transform: translate(-55%, -50%);
+}
+
+/* 페이지네이션 버튼 */
+/* 페이지네이션 위치 */
+.slider-box-1 .swiper-pagination {
+/* border: 3px solid red; */
+position: absolute;
+height: 80px;
+transform: translateY(16%);
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+visibility: hidden;
+transition: 0.3s;
+}
+.slider-box-1 .swiper-pagination.on {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* 페이지네이션 버튼 간격 */
+.slider-box-1 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
+}
+/* 페이지네이션 회색 버튼 */
+.slider-box-1 .swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
+  display: inline-block;
+  border-radius: 50%;
+  background: var(--swiper-pagination-bullet-inactive-color, white);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 1); 
+  transition: 0.3s;
+}
+/* 페이지네이션 빨간 버튼 */
+.slider-box-1  .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--swiper-pagination-color, var(--swiper-theme-color));
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 16px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 16px));
+  }
