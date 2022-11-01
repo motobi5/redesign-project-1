@@ -287,6 +287,7 @@ width: 160px;
 display: flex;
 justify-content: center;
 padding-top: 60px;
+/* border:3px solid red; */
 }
 .slider-box-1 .swiper .swiper-wrapper .slide01 {
   background-color: #111;;
@@ -458,7 +459,7 @@ position: relative;
 }
 .subSlide-1 .left-box div:nth-child(2) a .icon {
   font-size: 13px;
-  left: 45px;
+  left: 50px;
   top:50%;
   position: absolute;
   transform: translateY(-50%); 
@@ -473,13 +474,15 @@ position: relative;
 
 /* 슬라이드 내 하얀부분 */
 
-  /* 하얀색의 영역을 넓히려면?? */
+  /* 하얀색의 영역을 넓히려면?? ->중간 색상을 넣어서 부드럽게 하라 */
   .slider-box-2 .wh-gradation div {
-    height: 130px;
+    height: 100px;
     width: 393.33px;
     position: absolute;
-    background: linear-gradient(to top, transparent, white);
+    background-color: rgba(255,255,255, 0.8);
+    background: linear-gradient(180deg, #fff 0%, rgba(217,217, 217, 10%) 100%);
     z-index: 1;
+    /* border:3px solid red; */
   }
   .slider-box-2 .wh-gradation div:nth-child(1) {
     top:0;
@@ -490,21 +493,24 @@ position: relative;
   } 
 
   .slider-box-2 .swiper {
-    /* border:3px solid blue; */
+    border:3px solid blue;
     height:610px;
   }
   /* 왜 슬라이드가 정사각형이 안되는 건가?? */
   /* slidePerview의 영향때문에??  */
   .slider-box-2 .swiper .swiper-slide {
-    /* height: 393.33px; */
+    height: 300px;
+    border:3px solid red;
   }
 /* 호버가 자연스럽지 못하다 왜일까? */
   .slider-box-2 .navigation-wrapper {
     opacity: 0;
+    visibility: hidden;
     transition: 0.3s;
   }
   .slider-box-2:hover .navigation-wrapper {
     opacity: 1;
+    visibility: visible;
   }
  
 /* 슬라이드버튼 위치 */
