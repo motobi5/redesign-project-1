@@ -110,15 +110,40 @@ function SliderBox1__init() {
   $(".slider-box-1").mouseleave(function(){
     $(".slider-box-1 .navi_bar").removeClass("on");
     $(".slider-box-1 .navigation-wrapper").removeClass("on");
-    $(".slider-box-1 .swiper-pagination").removeClass("on");
-    
+    $(".slider-box-1 .swiper-pagination").removeClass("on");    
   });
 
-
 }
+
+function SliderBox2__init() {
+  const swiper = new Swiper(".slider-box-2 .swiper", {
+    direction: 'vertical',
+    // Optional parameters
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: ".slider-box-2 .swiper-pagination"
+    },
+    slidesPerView: 1.54, // 한 화면에 보일 슬라이드 개수, 소수 가능, effect 설정 시 적용 안 됨(coverflow는 가능)
+    spaceBetween: 10, // 슬라이드 간의 간격 설정
+    centeredSlides : true, //첫번째 슬라이드 중간에 오게 설정
+    autoplay: {
+      delay: 5000, // 5초마다 슬라이드 넘김
+      disableOnInteraction : false, // 자동 재생 중 건드려도 비활성화되지 않음
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: ".slider-box-2 .swiper-button-next",
+      prevEl: ".slider-box-2 .swiper-button-prev"
+    }
+  });
+}
+
 
 
 
 
 MegaMenu__init();
 SliderBox1__init();
+SliderBox2__init();

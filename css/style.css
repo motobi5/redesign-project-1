@@ -13,9 +13,7 @@ body, ul, li {
   margin: 0;
 }
 
-
 /* 라이브러리 */
-
 .con {
   width: 1200px;
   margin: 0 auto;
@@ -49,7 +47,6 @@ padding-left: 20px;
 text-align: center;
 align-self: center;
 /* border:3px solid gold; */
-
 }
 .topBar > .inner > div:nth-child(2) {
   flex-grow: 1;
@@ -59,6 +56,7 @@ align-self: center;
   flex-direction: column;
   /* border:3px solid blue; */
 }
+
 /* 탑바_네비게이션바 */
 .topBar_right .topBarTnb {
   /* border:3px solid red; */
@@ -139,7 +137,7 @@ position: absolute;
  visibility:visible;
  height: 320px;
 }
-
+/* 메가 흰색 배경 */
 .topBar .inner .mega .bg-white {
   opacity: 0;
   visibility: hidden;
@@ -180,7 +178,6 @@ position: absolute;
   padding: 30px 0;
   display:flex;
   justify-content: end;
-
 }
 /* .topBar .inner .mega  .megaMenu > div > .img-box {
   height: 0;
@@ -227,9 +224,6 @@ position: absolute;
   visibility: visible;
   height: 320px;
 }
-/* .topBar .inner .mega  .megaMenu > .menu_item {
-  background-color:rgba(255, 255, 255, 0.9);
-} */
 
 .topBar .inner .mega  .megaMenu ul li {
 padding:6px 8px;
@@ -244,7 +238,6 @@ width: 160px;
   padding: 6px 0;
   height: 100%;
   width: 300px;
-
 }
 .topBar .inner .mega  .megaMenu ul li:hover a {
  font-weight: bold;
@@ -305,7 +298,7 @@ padding-top: 60px;
   background-color: white;
 }
 
-/* 네비게이션바 */
+/* 슬라이드 네비게이션바 */
 .slider-box-1  .navi_bar {
   position: absolute;
   height: 80px;
@@ -347,6 +340,7 @@ transition: 0.3s;
   visibility: visible;
   height: 80px;
 }
+
 /* 슬라이드버튼 본체 */
 .slider-box-1 .swiper-button-prev,
 .slider-box-1 .swiper-button-next {
@@ -399,7 +393,6 @@ transition: 0.3s;
   visibility: visible;
 }
 
-
 /* 페이지네이션 버튼 간격 */
 .slider-box-1 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
@@ -421,3 +414,150 @@ transition: 0.3s;
     width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 16px));
     height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 16px));
   }
+
+  /* 서브슬라이드01 */
+.subSlide01 {
+  margin-top: 40px;
+  width: 1200px;
+  /* border:3px solid green; */
+  justify-content: space-between;
+}
+
+/* 왼쪽 박스 텍스트 */
+.subSlide01 .left-box {
+align-self: center;
+/* border:3px solid red; */
+height: 331px;
+width: 766.67px;
+padding-left: 40px;
+}
+.subSlide01 .left-box div:nth-child(1) > .title {
+font-size: 32px;
+font-weight: 700;
+}
+.subSlide01 .left-box div:nth-child(1) > .redline {
+width: 100px;
+height: 6px;
+background-color: #CF112B;
+margin: 20px 0 44px 0;
+}
+.subSlide01 .left-box div:nth-child(1) > span {
+font-size: 16px;
+font-weight: 400px;
+}
+/* 더보기 */
+.subSlide01 .left-box div:nth-child(2)  {
+width: 100px;
+height: 100px;
+display: flex;
+align-items: center;
+position: relative;
+}
+.subSlide01 .left-box div:nth-child(2) a:hover{
+  color: #757575;
+}
+.subSlide01 .left-box div:nth-child(2) a .icon {
+  font-size: 13px;
+  left: 45px;
+  top:50%;
+  position: absolute;
+  transform: translateY(-50%); 
+}
+
+/* 서브슬라이드 내용 */
+  .slider-box-2 {
+    position:relative;
+    /* border:3px solid red; */
+    width:393.33px;
+  }
+
+/* 슬라이드 내 하얀부분 */
+
+  /* 하얀색의 영역을 넓히려면?? */
+  .slider-box-2 .wh-gradation div {
+    height: 130px;
+    width: 393.33px;
+    position: absolute;
+    background: linear-gradient(to top, transparent, white);
+    z-index: 1;
+  }
+  .slider-box-2 .wh-gradation div:nth-child(1) {
+    top:0;
+  }
+  .slider-box-2 .wh-gradation div:nth-child(2) {
+    bottom: 0;
+    transform: rotate(-180deg);
+  } 
+
+  .slider-box-2 .swiper {
+    /* border:3px solid blue; */
+    height:610px;
+  }
+  /* 왜 슬라이드가 정사각형이 안되는 건가?? */
+  /* slidePerview의 영향때문에??  */
+  .slider-box-2 .swiper .swiper-slide {
+    /* height: 393.33px; */
+    border:1px solid gray;
+  }
+/* 호버가 자연스럽지 못하다 왜일까? */
+  .slider-box-2 .navigation-wrapper {
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .slider-box-2:hover .navigation-wrapper {
+    opacity: 1;
+  }
+ 
+/* 슬라이드버튼 위치 */
+  .slider-box-2 .swiper-button-prev {
+    top:94%;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  .slider-box-2 .swiper-button-next {
+    top:8%;
+    left:50%;
+    transform: translatex(-50%);
+  }
+  /* 슬라이드버튼 각도 */
+  .slider-box-2 .swiper-button-prev::after,
+  .slider-box-2 .swiper-button-next::after {
+    transform: rotate(-90deg);
+    font-size: 20px;
+  }
+  
+  /* 슬라이드 콘텐츠 내 텍스트 */
+  .slider-box-2 .swiper .swiper-slide {
+    position: relative;
+  }
+  .slider-box-2 .swiper .swiper-slide div > span{
+    position: absolute;
+    bottom: 0; 
+    right:0;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 700px;
+    font-family: "Noto Sans KR";
+    letter-spacing: -0.05em  ;
+    line-height: 30px;
+    color:white;
+    background-color: rgba(0,0,0,0.1);
+  }
+  
+/* 페이지네이션 회색 버튼 */
+.slider-box-2 .swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+  display: inline-block;
+  border-radius: 50%;
+  background: var(--swiper-pagination-bullet-inactive-color, gray);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.8); 
+  transition: 0.3s;
+}
+/* 페이지네이션 빨간 버튼 */
+.slider-box-2  .swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+}
