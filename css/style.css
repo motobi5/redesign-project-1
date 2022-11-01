@@ -416,7 +416,7 @@ transition: 0.3s;
   }
 
   /* 서브슬라이드01 */
-.subSlide01 {
+.subSlide-1 {
   margin-top: 40px;
   width: 1200px;
   /* border:3px solid green; */
@@ -424,39 +424,39 @@ transition: 0.3s;
 }
 
 /* 왼쪽 박스 텍스트 */
-.subSlide01 .left-box {
+.subSlide-1 .left-box {
 align-self: center;
 /* border:3px solid red; */
 height: 331px;
 width: 766.67px;
 padding-left: 40px;
 }
-.subSlide01 .left-box div:nth-child(1) > .title {
+.subSlide-1 .left-box div:nth-child(1) > .title {
 font-size: 32px;
 font-weight: 700;
 }
-.subSlide01 .left-box div:nth-child(1) > .redline {
+.subSlide-1 .left-box div:nth-child(1) > .redline {
 width: 100px;
 height: 6px;
 background-color: #CF112B;
 margin: 20px 0 44px 0;
 }
-.subSlide01 .left-box div:nth-child(1) > span {
+.subSlide-1 .left-box div:nth-child(1) > span {
 font-size: 16px;
 font-weight: 400px;
 }
 /* 더보기 */
-.subSlide01 .left-box div:nth-child(2)  {
+.subSlide-1 .left-box div:nth-child(2)  {
 width: 100px;
 height: 100px;
 display: flex;
 align-items: center;
 position: relative;
 }
-.subSlide01 .left-box div:nth-child(2) a:hover{
+.subSlide-1 .left-box div:nth-child(2) a:hover{
   color: #757575;
 }
-.subSlide01 .left-box div:nth-child(2) a .icon {
+.subSlide-1 .left-box div:nth-child(2) a .icon {
   font-size: 13px;
   left: 45px;
   top:50%;
@@ -497,7 +497,6 @@ position: relative;
   /* slidePerview의 영향때문에??  */
   .slider-box-2 .swiper .swiper-slide {
     /* height: 393.33px; */
-    border:1px solid gray;
   }
 /* 호버가 자연스럽지 못하다 왜일까? */
   .slider-box-2 .navigation-wrapper {
