@@ -190,7 +190,7 @@ li {
   opacity: 1;
   visibility: visible;
   height: 320px;
-  transition: 0.2s 0.3s;
+  transition: 0.5s 0.3s;
   /* 1초딜레이 후 트랜지션 작동하라 */
 }
 
@@ -573,12 +573,12 @@ li {
 
 /* 슬라이드버튼 위치 */
 .slider-box-2 .swiper-button-prev {
-  top: 8%;
+  top: 94%;
   left: 50%;
   transform: translatex(-50%);
 }
 .slider-box-2 .swiper-button-next {
-  top: 94%;
+  top: 8%;
   left: 50%;
   transform: translatex(-50%);
 }
@@ -586,7 +586,7 @@ li {
 /* 슬라이드버튼 각도 */
 .slider-box-2 .swiper-button-prev::after,
 .slider-box-2 .swiper-button-next::after {
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
   font-size: 20px;
 }
 
@@ -627,3 +627,133 @@ li {
   width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
   height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
 }
+
+/* content_2 */
+.content_2 {
+  margin-top: 40px;
+  margin-bottom: 400px;
+}
+/* 양옆으로 늘어나는 동작을 가두기 위한? */
+.content_2 .inner {
+  /* border:3px solid red; */
+  width: 1200px;
+  position: relative;
+}
+.content_2 .inner div {
+  gap:5px;
+}
+.content_2 .inner div .card-box {
+  width: 393.33px;
+  height: 393.33px;
+}
+/* 공통 왼쪽: 이응노아카데미 */
+.content_2 .inner .card-box {
+position: relative;
+border:1px solid lightgray;
+transition: 0.3s;
+background-color: white;
+} 
+/* 공통 오른쪽: 아트랩대전 */
+.content_2 .inner .card-box02 {
+  position: absolute;
+  right:0;
+  top:0;
+}
+.content_2 .inner .card-box01:hover,
+.content_2 .inner .card-box02:hover {
+  width: 796.67px;
+}
+/* 공통: 카드박스 프론트  */
+.content_2 .inner .card-box .card-box_front {
+transition: 0.3s;
+opacity: 1;
+visibility: visible;
+}
+.content_2 .inner .card-box:hover .card-box_front {
+  opacity: 0;
+  visibility: hidden;
+}
+/* 공통: 배경 */
+.content_2 .inner .card-box .card-box_front div {
+  width: 390px;
+  height:390px;
+  background-color: white;
+  transition: 0.3s
+}
+/* 공통: 프론트텍스트 */
+.content_2 .inner .card-box .card-box_front span {
+  position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+  font-size: 48px;
+  font-weight: 500;
+  font-family: "Noto Sans KR";
+  line-height: 70px;
+  letter-spacing: -0.05em;
+}
+/* 공통 배너 */
+.content_2 .inner .card-box .card_item .card-item_bn {
+  width: 575px;
+  height: 393.33px;
+  transition: 0.3s;
+}
+.content_2 .inner .card-box .card_item div {
+ position: absolute;
+ top:0;
+ opacity: 0;
+ transition:  0.3s;
+ visibility: hidden;
+}
+.content_2 .inner .card-box:hover .card_item01 div,
+.content_2 .inner .card-box:hover .card_item02 div {
+opacity: 1;
+visibility: visible;
+position: relative;
+z-index: 1;
+}
+
+/* 개별 배너 */
+.content_2 .inner .card-box01 .card_item01 .card-item_text {
+  /* border:3px solid blue; */
+  flex-grow: 1;
+}
+.content_2 .inner .card-box01 .card_item01 .card-item_bn {
+ width: 575px;
+ /* border:3px solid green; */
+}
+/* 왼쪽 레드바 */
+.content_2 .inner .card-box01 .card_item01 .red_bar {
+  width: 8px;
+  background-color: #CF112B;
+}
+.content_2 .inner .card-box02 .card_item02 .card-item_text {
+  /* border:3px solid blue; */
+  flex-grow: 1;
+}
+/* 오른쪽 레드바 */
+.content_2 .inner .card-box02 .card_item02 .red_bar {
+  position: absolute;
+  top:0;
+  width:8px;
+  background-color: #CF112B;
+}
+
+/* 이응노소장품이미지 */
+/* 포지션을 활용해서 이미지를 중간에 고정시킴 */
+.content_2 .inner .card-box_img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform:translateX(-50%);
+  border: 1px dashed lightgray;
+ 
+}
+/* 자연스럽게 사라지게 하기 위한(?)원본 */
+/* .content_2 .inner .card-box_img a {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+} */
+
+
