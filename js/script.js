@@ -140,10 +140,24 @@ function SliderBox2__init() {
   });
 }
 
+function CardBoxImg__hide() {
+  $(".content_2 .inner .card-box").mouseenter(function(){
+    let $this = $(this);
+    $this.siblings().addClass("hide");
+  });
 
+}
+function CardBoxImg__show() {
+  $(".content_2 .inner .card-box").mouseleave(function(){
+    let $this = $(this);
+    $this.siblings().removeClass("hide");
+  });
 
+}
 
 
 MegaMenu__init();
 SliderBox1__init();
 SliderBox2__init();
+CardBoxImg__hide();
+CardBoxImg__show();

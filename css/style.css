@@ -477,7 +477,7 @@ li {
   /* border:3px solid red; */
   height: 331px;
   width: 766.67px;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 .content_1 .left-box div:nth-child(1)>.title {
@@ -650,8 +650,9 @@ li {
 .content_2 .inner .card-box {
 position: relative;
 border:1px solid lightgray;
-transition: 0.3s;
+transition: 1s;
 background-color: white;
+overflow: hidden;
 } 
 /* 공통 오른쪽: 아트랩대전 */
 .content_2 .inner .card-box02 {
@@ -677,7 +678,7 @@ visibility: visible;
 .content_2 .inner .card-box .card-box_front div {
   width: 390px;
   height:390px;
-  background-color: white;
+  /* background-color: white; */
   transition: 0.3s
 }
 /* 공통: 프론트텍스트 */
@@ -691,6 +692,7 @@ transform: translate(-50%,-50%);
   font-family: "Noto Sans KR";
   line-height: 70px;
   letter-spacing: -0.05em;
+  /* transition: 1s; */
 }
 /* 공통 배너 */
 .content_2 .inner .card-box .card_item .card-item_bn {
@@ -698,22 +700,50 @@ transform: translate(-50%,-50%);
   height: 393.33px;
   transition: 0.3s;
 }
-.content_2 .inner .card-box .card_item div {
+.content_2 .inner .card-box .card_item > div {
  position: absolute;
  top:0;
  opacity: 0;
- transition:  0.3s;
  visibility: hidden;
+ transition:  1s;
+ /* border:3px solid red; */
+ height:100%;
+ width:100%;
 }
-.content_2 .inner .card-box:hover .card_item01 div,
-.content_2 .inner .card-box:hover .card_item02 div {
+.content_2 .inner .card-box:hover .card_item01 > div,
+.content_2 .inner .card-box:hover .card_item02 > div {
 opacity: 1;
 visibility: visible;
-position: relative;
+position: absolute;
+top:0;
+left:0;
 z-index: 1;
 }
-
-/* 개별 배너 */
+/* 공통: 이미지 */
+.content_2 .inner .card-box .card_item .card-item_bn a > .img-box > img {
+  /* border:3px solid red; */
+  /* width: 100%; */
+  height:393px;
+  /* 아래의 속성들이 작았다 커지는 현상을 막아준다 */
+  object-fit: cover;
+  object-position: 0 0;
+  position:absolute;
+  right:0;
+  }
+/* 공통: 카드아이템 텍스트 */
+  .content_2 .inner .card-box .card_item .card-item_text {
+    padding: 40px 22px;
+  }
+  .content_2 .inner .card-box .card_item .card-item_text span {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: "Noto Sans KR";
+  }
+  .content_2 .inner .card-box .card_item .card-item_text span:nth-child(2) {
+    font-weight: 700;
+  }
+/* 왼쪽에 위치한 배너 */
 .content_2 .inner .card-box01 .card_item01 .card-item_text {
   /* border:3px solid blue; */
   flex-grow: 1;
@@ -721,21 +751,25 @@ z-index: 1;
 .content_2 .inner .card-box01 .card_item01 .card-item_bn {
  width: 575px;
  /* border:3px solid green; */
+ position:absolute;
+ right:0;
 }
-/* 왼쪽 레드바 */
-.content_2 .inner .card-box01 .card_item01 .red_bar {
-  width: 8px;
-  background-color: #CF112B;
-}
+/* 오른쪽에 위치한 배너 */
 .content_2 .inner .card-box02 .card_item02 .card-item_text {
   /* border:3px solid blue; */
   flex-grow: 1;
+  text-align:right;
 }
-/* 오른쪽 레드바 */
+.content_2 .inner .card-box02 .card_item02 .card-item_bn {
+  width: 575px;
+  /* border:3px solid green; */
+  position:absolute;
+  left:0;
+ }
+/* 레드바 */
+.content_2 .inner .card-box01 .card_item01 .red_bar,
 .content_2 .inner .card-box02 .card_item02 .red_bar {
-  position: absolute;
-  top:0;
-  width:8px;
+  width: 8px;
   background-color: #CF112B;
 }
 
@@ -749,11 +783,8 @@ z-index: 1;
   border: 1px dashed lightgray;
  
 }
-/* 자연스럽게 사라지게 하기 위한(?)원본 */
-/* .content_2 .inner .card-box_img a {
-  opacity: 1;
-  visibility: visible;
-  transition: 0.3s;
-} */
+.content_2 .inner .card-box_img.hide {
+  opacity: 0;
+}
 
 
