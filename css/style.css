@@ -340,7 +340,7 @@ body {
 /* 슬라이드 네비게이션바 */
 .slider-box-1 .navi_bar {
   position: absolute;
-  height: 80px;
+  height: 60px;
   width: 100%;
   /* border:3px solid green; */
   bottom: 0;
@@ -380,17 +380,18 @@ body {
 .slider-box-1 .navigation-wrapper.on {
   opacity: 1;
   visibility: visible;
-  height: 80px;
+  height: 60px;
 }
 
 /* 슬라이드버튼 본체 */
 .slider-box-1 .swiper-button-prev,
 .slider-box-1 .swiper-button-next {
   position: relative;
-  margin-bottom: 46px;
+  margin-bottom: 38px;
   width: 46px;
   border-radius: 555px;
   transition: 0.3s;
+
 }
 
 .slider-box-1 .swiper-button-prev:hover,
@@ -399,7 +400,8 @@ body {
 }
 
 /* 슬라이드버튼 콘텐츠 */
-.slider-box-1 .swiper-button-prev::after {
+.slider-box-1 .swiper-button-prev::after,
+.slider-box-1 .swiper-button-next::after {
   font-size: 18px;
   color: white;
   transition: 0.3s;
@@ -410,12 +412,7 @@ body {
 }
 
 .slider-box-1 .swiper-button-next::after {
-  font-size: 18px;
-  color: white;
-  transition: 0.3s;
-  position: absolute;
   left: 55%;
-  top: 50%;
   transform: translate(-55%, -50%);
 }
 
@@ -424,7 +421,7 @@ body {
 .slider-box-1 .swiper-pagination {
   /* border: 3px solid red; */
   position: absolute;
-  height: 80px;
+  height: 60px;
   transform: translateY(16%);
   display: flex;
   justify-content: center;
@@ -646,20 +643,17 @@ body {
   width: 1200px;
   position: relative;
 }
-.content_2 .inner div{
+.content_2 .inner > div{
   gap:5px;
 }
-.content_3 .inner div{
+.content_3 .inner > div{
   gap:10px;
   justify-content: end;
 }
-.content .inner div .card-box {
+.content .inner > div .card-box {
   width: 393.33px;
   height: 393.33px;
 }
-
-
-
 
 
 /* 공통 왼쪽: 이응노아카데미 */
@@ -805,6 +799,7 @@ z-index: 1;
   left: 0;
   border: 1px dashed lightgray;
 }
+
 .content_2 .inner .card-box_img.hide,
 .content_3 .inner .card-box_img.hide {
   opacity: 0;
@@ -812,31 +807,32 @@ z-index: 1;
 
 
 /* 아트숍 */
-.content_3 .inner div .card-box03 {
+.content_3 .inner > div .card-box03 {
   width: 796.67px;
   height: 393.33px;
   /* border:3px solid red; */
   transition: 1s;
 }
 /* 아트숍 카드박스 프론트  */
-.content_3 .inner .card-box .card-box_front {
+.content_3 .inner > div .card-box .card-box_front {
   /* transition: 0.5s 0.3s; */
   opacity: 1;
   visibility: visible;
   }
-  .content_3 .inner .card-box:hover .card-box_front {
+
+  .content_3 .inner > div .card-box:hover .card-box_front {
     opacity: 0;
     visibility: hidden;
   }
   /* 아트숍 배경 */
-  .content_3 .inner .card-box .card-box_front > div {
+  .content_3 .inner > div .card-box .card-box_front > div {
     height:390px;
     /* border:3px solid green; */
     background-color: white;
     transition: 1s;
   }
   /* 아트숍 프론트텍스트 */
-  .content_3 .inner .card-box .card-box_front span {
+  .content_3 .inner > div .card-box .card-box_front span {
     position: absolute;
   top:40px;
   left: 30px;
@@ -848,54 +844,51 @@ z-index: 1;
     /* transition: 1s; */
   }
   /* 나중에 시간되면 아트숍 라인 다시 해보기 보더라인이 아닌 너비와 높이로 지정하기 */
-  .content_3 .inner .card-box .card-box_front > div > .text-box {
+  .content_3 .inner > div .card-box .card-box_front > div > .text-box {
     margin-left: 30px;
     width: 160px;
     height:144px;
     border-bottom: 2px solid #303030;
   }
-  .content_3 .inner .card-box .card-box_front > div > div > span:nth-child(2) {
+  .content_3 .inner > div .card-box .card-box_front > div > div > span:nth-child(2) {
     left: 140px;
     font-size: 72px;
     font-weight: 400;
     letter-spacing: -0.05em;
   }
-  /* .content_3 .inner > div .card-box03 > .shop {
-    opacity: 0;
-    visibility: hidden;
-  } */
 
 /* 호버시 아트숍 슬라이드 등장 */
-.content_3 .inner div .card-box03:hover {
+.content_3 .inner > div .card-box03:hover {
   width: 1200px;
-  height: 600px;
+  height: 590px;
   /* border:3px solid blue; */
 }
-.content_3 .inner div .card-box03 .shop {
+.content_3 .inner > div .card-box03 .shop {
   position: absolute;
   top:0;
   left: 0;
-  height: 600px;
+  height: 590px;
   /* width: 1200px; */
 }
-.content_3 .inner div .card-box03:hover .shop {
+
+.content_3 .inner .card-box03:hover .shop {
   opacity: 1;
   visibility: visible;
   /* border: 3px solid red; */
-  height: 600px;
+  height: 590px;
 }
-.content_3 .inner div .card-box03 .shop > .box {
+.content_3 .inner .card-box03 .shop > .box {
   position: relative;
 }
 /* 아트숍 콘텐츠 내부 텍스트 */
-.content_3 .inner div .card-box03 .shop .card-item_text {
+.content_3 .inner .card-box03 .shop .card-item_text {
   width: 393px;
   opacity: 0;
   visibility: hidden;
   /* border:3px solid green; */
   /* transition: 0.5s 0.3s; */
 }
-.content_3 .inner div .card-box03 .shop .card-item_text .main_text span {
+.content_3 .inner > div .card-box03 .shop .card-item_text .main_text span {
   position: absolute;
   top:40px;
   left: 30px;
@@ -906,29 +899,28 @@ z-index: 1;
     letter-spacing: -0.03em;
     /* transition: 1s; */
 }
-.content_3 .inner div .card-box03 .shop .card-item_text .main_text > span:nth-child(2) {
+.content_3 .inner > div .card-box03 .shop .card-item_text .main_text > span:nth-child(2) {
   top:110px;
   left: 75px;
   font-weight: 400;
   font-size: 72px;
   line-height: 84px;
 }
-
-.content_3 .inner div .card-box03 .shop .card-item_text .bottom .b-line {
+.content_3 .inner > div .card-box03 .shop .card-item_text .bottom .b-line {
   position: absolute;
   top:240px;
   left:100px;
   height: 0;
   width: 2px;
   background-color: #303030;
-  transition: 1s 0.3s;
+  transition: 1.6s 0.3s;
 }
-.content_3 .inner div .card-box03:hover .shop .card-item_text .bottom .b-line {
+.content_3 .inner > div .card-box03:hover .shop .card-item_text .bottom .b-line {
   height: 357px ;
   width: 2px;
   background-color: #303030;
 }
-.content_3 .inner div .card-box03 .shop .card-item_text .bottom .more {
+.content_3 .inner > div .card-box03 .shop .card-item_text .bottom .more {
   position: absolute;
   bottom: 40px;
   left:124px;
@@ -936,33 +928,76 @@ z-index: 1;
   opacity: 0;
   visibility: hidden;
 }
-.content_3 .inner div .card-box03:hover .shop .card-item_text .bottom .more {
+.content_3 .inner > div .card-box03:hover .shop .card-item_text .bottom .more {
   opacity: 1;
   visibility: visible;
 }
-.content_3 .inner div .card-box03 .shop .slider-box-3  {
-  position: relative;
-  height: 600px;
-  width: 796px;
-}
-.content_3 .inner div .card-box03 .shop .slider-box-3 .swiper {
 
-  border: 3px solid gold;
+/* 슬라이드 박스 */
+.content_3 .inner > div .card-box03 .shop .slider-box-3  {
+  position: relative;
+  height: 590px;
+  width: 807px;
+}
+.content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper {
+  /* border: 3px solid gold; */
   height: 590px;
   width: 807px;
   transition: 0.5s 0.3s;
   opacity: 0;
   visibility: hidden;
-  position: absolute;
-  top:0;
 }
-.content_3 .inner div .card-box03:hover .shop .card-item_text,
-.content_3 .inner div .card-box03:hover .shop .slider-box-3 .swiper {
+.content_3 .inner > div .card-box03:hover .shop .card-item_text,
+.content_3 .inner > div .card-box03:hover .shop .slider-box-3 .swiper {
   opacity: 1;
   visibility: visible;
 }
-.content_3 .inner div .card-box03 .shop .slider-box-3 .swiper .swiper-slide {
-  height: 520px;
-  border: 3px solid red;
+/* 슬라이드 내용 */
+.content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper .swiper-slide {
+  height: 530px;
+  /* border: 3px solid red; */
   background-color: white;
+}
+.content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper .swiper-slide .img-box img {
+ height: 530px;
+ object-fit: cover;
+}
+
+/* 슬라이드버튼 위치 */
+.content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper-button-prev,
+.content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper-button-next {
+  bottom: 0;
+  right:0;
+  left: auto;
+  top:auto;
+  width: 60px;
+  height: 60px;
+  background-color: #b7b7b7;
+}
+.content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper-button-prev {
+  right:60px;
+}
+/* 슬라이드버튼 호버했을 때 */
+.content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper-button-prev:hover,
+.content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper-button-next:hover {
+  background-color: #CF112B;
+}
+/* 슬라이드버튼 화살표 색상 */
+.content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper-button-prev::after,
+.content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper-button-next::after {
+  font-size: 24px;
+  color: white;
+}
+
+/* 페이지네이션 버튼 */
+.content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper-pagination {
+  /* border: 3px solid red; */
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E0E0E0;
+ 
 }

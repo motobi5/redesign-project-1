@@ -165,8 +165,8 @@ function SliderBox3__init() {
   const swiper = new Swiper(".slider-box-3 .swiper", {
     // Optional parameters
     loop: true,
-    spaceBetween: 30,
-    slidesPerView: 2.5, // 한 화면에 보일 슬라이드 개수, 소수 가능, effect 설정 시 적용 안 됨(coverflow는 가능)
+    spaceBetween: 10,
+    slidesPerView: 2.2, // 한 화면에 보일 슬라이드 개수, 소수 가능, effect 설정 시 적용 안 됨(coverflow는 가능)
     // If we need pagination
     pagination: {
       el: ".slider-box-3 .swiper-pagination"
