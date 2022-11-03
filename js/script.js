@@ -145,6 +145,10 @@ function CardBoxImg__hide() {
     let $this = $(this);
     $this.siblings().addClass("hide");
   });
+  $(".content_3 .inner .card-box").mouseenter(function(){
+    let $this = $(this);
+    $this.siblings().addClass("hide");
+  });
 
 }
 function CardBoxImg__show() {
@@ -152,8 +156,35 @@ function CardBoxImg__show() {
     let $this = $(this);
     $this.siblings().removeClass("hide");
   });
-
+  $(".content_3 .inner .card-box").mouseleave(function(){
+    let $this = $(this);
+    $this.siblings().removeClass("hide");
+  });
 }
+function SliderBox3__init() {
+  const swiper = new Swiper(".slider-box-3 .swiper", {
+    // Optional parameters
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 2.5, // 한 화면에 보일 슬라이드 개수, 소수 가능, effect 설정 시 적용 안 됨(coverflow는 가능)
+    // If we need pagination
+    pagination: {
+      el: ".slider-box-3 .swiper-pagination"
+    },
+    // centeredSlides : true, //첫번째 슬라이드 중간에 오게 설정
+    autoplay: {
+      delay: 5000, // 5초마다 슬라이드 넘김
+      disableOnInteraction : false, // 자동 재생 중 건드려도 비활성화되지 않음
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".slider-box-3 .swiper-button-next",
+      prevEl: ".slider-box-3 .swiper-button-prev"
+    }
+  });
+}
+
 
 
 MegaMenu__init();
@@ -161,3 +192,4 @@ SliderBox1__init();
 SliderBox2__init();
 CardBoxImg__hide();
 CardBoxImg__show();
+SliderBox3__init();
