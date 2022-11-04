@@ -512,7 +512,7 @@ body {
 
 .content_1 .left-box div:nth-child(2) a .icon {
   font-size: 13px;
-  left: 50px;
+  left: 46px;
   top: 50%;
   position: absolute;
   transform: translateY(-50%);
@@ -858,6 +858,7 @@ z-index: 1;
   }
 
 /* 호버시 아트숍 슬라이드 등장 */
+/* 추후에 호버를 클릭으로 변경해보자!*/
 .content_3 .inner > div .card-box03:hover {
   width: 1200px;
   height: 590px;
@@ -870,7 +871,6 @@ z-index: 1;
   height: 590px;
   /* width: 1200px; */
 }
-
 .content_3 .inner .card-box03:hover .shop {
   opacity: 1;
   visibility: visible;
@@ -882,7 +882,7 @@ z-index: 1;
 }
 /* 아트숍 콘텐츠 내부 텍스트 */
 .content_3 .inner .card-box03 .shop .card-item_text {
-  width: 393px;
+  width: 403px;
   opacity: 0;
   visibility: hidden;
   /* border:3px solid green; */
@@ -920,6 +920,7 @@ z-index: 1;
   width: 2px;
   background-color: #303030;
 }
+/* 더보기 */
 .content_3 .inner > div .card-box03 .shop .card-item_text .bottom .more {
   position: absolute;
   bottom: 40px;
@@ -932,17 +933,28 @@ z-index: 1;
   opacity: 1;
   visibility: visible;
 }
+.content_3 .inner > div .card-box03 .shop .card-item_text .bottom .more:hover a {
+  color: #757575;
+}
+.content_3 .inner > div .card-box03 .shop .card-item_text .bottom .more a .icon {
+  font-size: 13px;
+  left: 46px;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
 
 /* 슬라이드 박스 */
 .content_3 .inner > div .card-box03 .shop .slider-box-3  {
   position: relative;
   height: 590px;
-  width: 807px;
+  width: 797px;
+  text-align: right;
 }
 .content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper {
   /* border: 3px solid gold; */
   height: 590px;
-  width: 807px;
+  width: 797px;
   transition: 0.5s 0.3s;
   opacity: 0;
   visibility: hidden;
@@ -961,6 +973,42 @@ z-index: 1;
 .content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper .swiper-slide .img-box img {
  height: 530px;
  object-fit: cover;
+}
+
+/* 해당 슬라이드 호버시 등장하는 검은배경과 텍스트 */
+.content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper .swiper-slide .bg {
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s;
+}
+.content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper .swiper-slide .bg_text {
+  position: absolute;
+  bottom: 0;
+  right:0;
+  color: white;
+  text-align: right;
+  padding: 24px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper .swiper-slide:hover .bg_text {
+  opacity: 1;
+  visibility: visible;
+}
+.content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper .swiper-slide .bg_text div:nth-child(2) {
+  font-size: 30px;
+
+}
+.content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper .swiper-slide:hover .bg {
+  background-color: rgba(30, 30, 30, 0.6);
+
 }
 
 /* 슬라이드버튼 위치 */
