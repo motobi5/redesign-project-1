@@ -55,7 +55,6 @@ body {
   padding-left: 20px;
   text-align: center;
   align-self: center;
-  /* border:3px solid gold; */
 }
 
 .topBar>.inner>div:nth-child(2) {
@@ -65,12 +64,10 @@ body {
 .topBar_right {
   display: flex;
   flex-direction: column;
-  /* border:3px solid blue; */
 }
 
 /* 탑바_네비게이션바 */
 .topBar_right .topBarTnb {
-  /* border:3px solid red; */
   padding: 0 6px;
   height: 32px;
 }
@@ -81,7 +78,6 @@ body {
   font-size: 10px;
   color: #5F5D5D;
   transition: 0.3s;
-  /* border:3px solid green; */
 }
 
 .topBar_right .topBarTnb a:hover {
@@ -145,7 +141,6 @@ body {
   width: 100%;
   left: 0;
   background-color: rgba(250, 250, 250, 0.98);
-  /* border:3px solid red; */
   z-index: 99;
   opacity: 0;
   visibility: hidden;
@@ -171,7 +166,6 @@ body {
   top: 0;
   z-index: -1;
   transition: 0.3s;
-  /* border:3px solid blue; */
 }
 
 .topBar .inner .mega .bg-white.active {
@@ -297,7 +291,6 @@ body {
 }
 
 /* 메인슬라이드 */
-
 /* 메인색상 */
 :root {
   --swiper-theme-color: red !important;
@@ -306,14 +299,12 @@ body {
 
 .slider-box-1 {
   position: relative;
-  /* border:3px solid red; */
   /* width: 200px;
   z-index: -10; */
 }
 
 .slider-box-1 .swiper {
   height: 850px;
-  /* border:3px solid blue; */
   /* width: 1200px; */
 }
 
@@ -323,12 +314,10 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 60px;
-  /* border:3px solid red; */
 }
 
 .slider-box-1 .swiper .swiper-wrapper .slide01 {
   background-color: #111;
-  ;
 }
 
 .slider-box-1 .swiper .swiper-wrapper .slide02,
@@ -342,7 +331,6 @@ body {
   position: absolute;
   height: 60px;
   width: 100%;
-  /* border:3px solid green; */
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -359,7 +347,6 @@ body {
 /* 슬라이드버튼 */
 /* 슬라이드버튼 위치 */
 .slider-box-1 .navigation-wrapper {
-  /* border:3px solid gold; */
   height: 0;
   width: 1200px;
   margin: 0 auto;
@@ -419,7 +406,6 @@ body {
 /* 페이지네이션 버튼 */
 /* 페이지네이션 위치 */
 .slider-box-1 .swiper-pagination {
-  /* border: 3px solid red; */
   position: absolute;
   height: 60px;
   transform: translateY(16%);
@@ -467,14 +453,12 @@ body {
 .content_1 {
   margin-top: 40px;
   width: 1200px;
-  /* border:3px solid green; */
   justify-content: space-between;
 }
 
 /* 왼쪽 박스 텍스트 */
 .content_1 .left-box {
   align-self: center;
-  /* border:3px solid red; */
   height: 331px;
   width: 766.67px;
   padding-left: 30px;
@@ -512,7 +496,7 @@ body {
 
 .content_1 .left-box div:nth-child(2) a .icon {
   font-size: 13px;
-  left: 46px;
+  left: 50px;
   top: 50%;
   position: absolute;
   transform: translateY(-50%);
@@ -521,7 +505,6 @@ body {
 /* 서브슬라이드 내용 */
 .slider-box-2 {
   position: relative;
-  /* border:3px solid red; */
   width: 393.33px;
 }
 
@@ -535,7 +518,6 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   background: linear-gradient(180deg, #fff 0%, rgba(217, 217, 217, 10%) 100%);
   z-index: 1;
-  /* border:3px solid red; */
 }
 
 .slider-box-2 .wh-gradation div:nth-child(1) {
@@ -548,7 +530,6 @@ body {
 }
 
 .slider-box-2 .swiper {
-  /* border:3px solid blue; */
   height: 610px;
 }
 
@@ -556,7 +537,6 @@ body {
 /* slidePerview의 영향때문에??  */
 .slider-box-2 .swiper .swiper-slide {
   height: 300px;
-  /* border:3px solid red; */
 }
 
 /* 호버가 자연스럽지 못하다 왜일까? */
@@ -639,7 +619,6 @@ body {
 }
 /* 양옆으로 늘어나는 동작을 가두기 위한? */
 .content .inner {
-  /* border:3px solid red; */
   width: 1200px;
   position: relative;
 }
@@ -717,7 +696,6 @@ transform: translate(-50%,-50%);
  opacity: 0;
  visibility: hidden;
  transition:  1s;
- /* border:3px solid red; */
  height:100%;
  width:100%;
 }
@@ -732,7 +710,6 @@ z-index: 1;
 }
 /* 공통: 이미지 */
 .content_2 .inner .card-box .card_item .card-item_bn a > .img-box > img {
-  /* border:3px solid red; */
   /* width: 100%; */
   height:393px;
   /* 아래의 속성들이 작았다 커지는 현상을 막아준다 */
@@ -742,38 +719,34 @@ z-index: 1;
   right:0;
   }
 /* 공통: 카드아이템 텍스트 */
-  .content_2 .inner .card-box .card_item .card-item_text {
-    padding: 40px 22px;
-  }
-  .content_2 .inner .card-box .card_item .card-item_text span {
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 1.2;
-    font-family: "Noto Sans KR";
-  }
-  .content_2 .inner .card-box .card_item .card-item_text span:nth-child(2) {
-    font-weight: 700;
-  }
+.content_2 .inner .card-box .card_item .card-item_text {
+  padding: 40px 22px;
+}
+.content_2 .inner .card-box .card_item .card-item_text span {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+  font-family: "Noto Sans KR";
+}
+.content_2 .inner .card-box .card_item .card-item_text span:nth-child(2) {
+  font-weight: 700;
+}
 /* 왼쪽에 위치한 배너 */
 .content_2 .inner .card-box01 .card_item01 .card-item_text {
-  /* border:3px solid blue; */
   flex-grow: 1;
 }
 .content_2 .inner .card-box01 .card_item01 .card-item_bn {
  width: 575px;
- /* border:3px solid green; */
  position:absolute;
  right:0;
 }
 /* 오른쪽에 위치한 배너 */
 .content_2 .inner .card-box02 .card_item02 .card-item_text {
-  /* border:3px solid blue; */
   flex-grow: 1;
   text-align:right;
 }
 .content_2 .inner .card-box02 .card_item02 .card-item_bn {
   width: 575px;
-  /* border:3px solid green; */
   position:absolute;
   left:0;
  }
@@ -799,7 +772,6 @@ z-index: 1;
   left: 0;
   border: 1px dashed lightgray;
 }
-
 .content_2 .inner .card-box_img.hide,
 .content_3 .inner .card-box_img.hide {
   opacity: 0;
@@ -810,7 +782,6 @@ z-index: 1;
 .content_3 .inner > div .card-box03 {
   width: 796.67px;
   height: 393.33px;
-  /* border:3px solid red; */
   transition: 1s;
 }
 /* 아트숍 카드박스 프론트  */
@@ -820,49 +791,58 @@ z-index: 1;
   visibility: visible;
   }
 
-  .content_3 .inner > div .card-box:hover .card-box_front {
+  .content_3 .inner > div .card-box.hover .card-box_front {
     opacity: 0;
     visibility: hidden;
   }
+ 
   /* 아트숍 배경 */
   .content_3 .inner > div .card-box .card-box_front > div {
     height:390px;
-    /* border:3px solid green; */
     background-color: white;
-    transition: 1s;
+    transition: 0.3s;
   }
+  .content_3 .inner > div .card-box .card-box_front > div:hover {
+    color: #b7b7b7;
+  }
+  
   /* 아트숍 프론트텍스트 */
   .content_3 .inner > div .card-box .card-box_front span {
     position: absolute;
-  top:40px;
-  left: 30px;
-  font-size: 80px;
+    top:40px;
+    left: 30px;
+    font-size: 80px;
     font-weight: 500;
     font-family: 'Roboto';
     line-height: 94px;
     letter-spacing: -0.03em;
-    /* transition: 1s; */
-  }
-  /* 나중에 시간되면 아트숍 라인 다시 해보기 보더라인이 아닌 너비와 높이로 지정하기 */
-  .content_3 .inner > div .card-box .card-box_front > div > .text-box {
-    margin-left: 30px;
-    width: 160px;
-    height:144px;
-    border-bottom: 2px solid #303030;
+    cursor: pointer;
+    z-index: 1;
   }
   .content_3 .inner > div .card-box .card-box_front > div > div > span:nth-child(2) {
     left: 140px;
     font-size: 72px;
     font-weight: 400;
     letter-spacing: -0.05em;
+    line-height: 1.35;
+  }
+  /* 카드박스 프론트 라인 */
+  .content_3 .inner > div .card-box03 .card-box_front .b-line {
+    position: absolute;
+    top:107px;
+    left: 0px;
+    width: 280px;
+    height:1px;
+    background-color: #111;
+  }
+  .content_3 .inner > div .card-box03 .card-box_front:hover .b-line {
+    background-color: #b7b7b7;
   }
 
 /* 호버시 아트숍 슬라이드 등장 */
-/* 추후에 호버를 클릭으로 변경해보자!*/
-.content_3 .inner > div .card-box03:hover {
+.content_3 .inner > div .card-box03.hover {
   width: 1200px;
   height: 590px;
-  /* border:3px solid blue; */
 }
 .content_3 .inner > div .card-box03 .shop {
   position: absolute;
@@ -871,10 +851,9 @@ z-index: 1;
   height: 590px;
   /* width: 1200px; */
 }
-.content_3 .inner .card-box03:hover .shop {
+.content_3 .inner .card-box03.hover .shop {
   opacity: 1;
   visibility: visible;
-  /* border: 3px solid red; */
   height: 590px;
 }
 .content_3 .inner .card-box03 .shop > .box {
@@ -885,19 +864,17 @@ z-index: 1;
   width: 403px;
   opacity: 0;
   visibility: hidden;
-  /* border:3px solid green; */
-  /* transition: 0.5s 0.3s; */
 }
 .content_3 .inner > div .card-box03 .shop .card-item_text .main_text span {
   position: absolute;
   top:40px;
   left: 30px;
   font-size: 80px;
-    font-weight: 500;
-    font-family: 'Roboto';
-    line-height: 94px;
-    letter-spacing: -0.03em;
-    /* transition: 1s; */
+  font-weight: 500;
+  font-family: 'Roboto';
+  line-height: 94px;
+  letter-spacing: -0.03em;
+  cursor: pointer;
 }
 .content_3 .inner > div .card-box03 .shop .card-item_text .main_text > span:nth-child(2) {
   top:110px;
@@ -911,15 +888,23 @@ z-index: 1;
   top:240px;
   left:100px;
   height: 0;
-  width: 2px;
-  background-color: #303030;
+  width: 1px;
+  background-color: #757575;
   transition: 1.6s 0.3s;
 }
-.content_3 .inner > div .card-box03:hover .shop .card-item_text .bottom .b-line {
+.content_3 .inner > div .card-box03.hover .shop .card-item_text .bottom .b-line {
   height: 357px ;
-  width: 2px;
-  background-color: #303030;
+  width: 1px;
 }
+/* 텍스트 호버시 */
+.content_3 .inner > div .card-box03 .shop .card-item_text .main_text {
+  color: #757575;
+  transition: 0.3s;
+}
+.content_3 .inner > div .card-box03 .shop .card-item_text .main_text:hover {
+  color: #303030;
+ }
+
 /* 더보기 */
 .content_3 .inner > div .card-box03 .shop .card-item_text .bottom .more {
   position: absolute;
@@ -929,7 +914,7 @@ z-index: 1;
   opacity: 0;
   visibility: hidden;
 }
-.content_3 .inner > div .card-box03:hover .shop .card-item_text .bottom .more {
+.content_3 .inner > div .card-box03.hover .shop .card-item_text .bottom .more {
   opacity: 1;
   visibility: visible;
 }
@@ -938,7 +923,7 @@ z-index: 1;
 }
 .content_3 .inner > div .card-box03 .shop .card-item_text .bottom .more a .icon {
   font-size: 13px;
-  left: 46px;
+  left: 50px;
   top: 50%;
   position: absolute;
   transform: translateY(-50%);
@@ -952,22 +937,20 @@ z-index: 1;
   text-align: right;
 }
 .content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper {
-  /* border: 3px solid gold; */
   height: 590px;
   width: 797px;
   transition: 0.5s 0.3s;
   opacity: 0;
   visibility: hidden;
 }
-.content_3 .inner > div .card-box03:hover .shop .card-item_text,
-.content_3 .inner > div .card-box03:hover .shop .slider-box-3 .swiper {
+.content_3 .inner > div .card-box03.hover .shop .card-item_text,
+.content_3 .inner > div .card-box03.hover .shop .slider-box-3 .swiper {
   opacity: 1;
   visibility: visible;
 }
 /* 슬라이드 내용 */
 .content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper .swiper-slide {
   height: 530px;
-  /* border: 3px solid red; */
   background-color: white;
 }
 .content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper .swiper-slide .img-box img {
@@ -1004,11 +987,9 @@ z-index: 1;
 }
 .content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper .swiper-slide .bg_text div:nth-child(2) {
   font-size: 30px;
-
 }
 .content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper .swiper-slide:hover .bg {
   background-color: rgba(30, 30, 30, 0.6);
-
 }
 
 /* 슬라이드버튼 위치 */
@@ -1039,7 +1020,6 @@ z-index: 1;
 
 /* 페이지네이션 버튼 */
 .content_3 .inner > div .card-box03 .shop .slider-box-3 .swiper-pagination {
-  /* border: 3px solid red; */
   position: absolute;
   bottom: 0;
   height: 60px;
@@ -1047,5 +1027,5 @@ z-index: 1;
   justify-content: center;
   align-items: center;
   background-color: #E0E0E0;
- 
 }
+

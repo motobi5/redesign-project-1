@@ -89,12 +89,14 @@ function SliderBox1__init() {
   const swiper = new Swiper(".slider-box-1 .swiper", {
     // Optional parameters
     loop: true,
-
+    autoplay: {
+      delay: 5000, // 5초마다 슬라이드 넘김
+      disableOnInteraction : false, // 자동 재생 중 건드려도 비활성화되지 않음
+    },
     // If we need pagination
     pagination: {
       el: ".slider-box-1 .swiper-pagination"
     },
-
     // Navigation arrows
     navigation: {
       nextEl: ".slider-box-1 .swiper-button-next",
@@ -145,11 +147,10 @@ function CardBoxImg__hide() {
     let $this = $(this);
     $this.siblings().addClass("hide");
   });
-  $(".content_3 .inner .card-box").mouseenter(function(){
+  $(".content_3 .inner .card-box").click(function(){
     let $this = $(this);
     $this.siblings().addClass("hide");
   });
-
 }
 function CardBoxImg__show() {
   $(".content_2 .inner .card-box").mouseleave(function(){
@@ -161,12 +162,13 @@ function CardBoxImg__show() {
     $this.siblings().removeClass("hide");
   });
 }
+
 function SliderBox3__init() {
   const swiper = new Swiper(".slider-box-3 .swiper", {
     // Optional parameters
     loop: true,
     spaceBetween: 10,
-    slidesPerView: 2.2, // 한 화면에 보일 슬라이드 개수, 소수 가능, effect 설정 시 적용 안 됨(coverflow는 가능)
+    slidesPerView: 2.188, // 한 화면에 보일 슬라이드 개수, 소수 가능, effect 설정 시 적용 안 됨(coverflow는 가능)
     // If we need pagination
     pagination: {
       el: ".slider-box-3 .swiper-pagination"
@@ -185,7 +187,20 @@ function SliderBox3__init() {
   });
 }
 
+function CardBox03Open__init() {
+  $(".card-box03 .text-box span").click(function(){
+    $(".content_3 .inner > div .card-box03").addClass("hover");
+  });
+  $(".card-item_text .main_text span").click(function(){
+    $(".content_3 .inner > div .card-box03").removeClass("hover");
+  });
 
+  // 아래 함수는 이 부분을 제외하고 반응하라
+  $(".content_3 .inner .card-box03 .shop > .box").click(function(){
+    return false;
+  });
+
+}
 
 MegaMenu__init();
 SliderBox1__init();
@@ -193,3 +208,4 @@ SliderBox2__init();
 CardBoxImg__hide();
 CardBoxImg__show();
 SliderBox3__init();
+CardBox03Open__init();
