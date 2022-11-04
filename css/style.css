@@ -803,7 +803,7 @@ z-index: 1;
     transition: 0.3s;
   }
   .content_3 .inner > div .card-box .card-box_front > div:hover {
-    color: #b7b7b7;
+    /* color: #b7b7b7; */
   }
   
   /* 아트숍 프론트텍스트 */
@@ -831,12 +831,13 @@ z-index: 1;
     position: absolute;
     top:107px;
     left: 0px;
-    width: 280px;
+    width: 0;
     height:1px;
     background-color: #111;
+    transition: 0.6s;
   }
   .content_3 .inner > div .card-box03 .card-box_front:hover .b-line {
-    background-color: #b7b7b7;
+    width: 290px;
   }
 
 /* 호버시 아트숍 슬라이드 등장 */
@@ -872,16 +873,20 @@ z-index: 1;
   font-size: 80px;
   font-weight: 500;
   font-family: 'Roboto';
-  line-height: 94px;
+  line-height: 0.7;
   letter-spacing: -0.03em;
   cursor: pointer;
+  transition: 0.3s;
 }
+.content_3 .inner > div .card-box03 .shop .card-item_text .main_text:hover span {
+  border-bottom: 1px solid ;
+ }
 .content_3 .inner > div .card-box03 .shop .card-item_text .main_text > span:nth-child(2) {
   top:110px;
   left: 75px;
   font-weight: 400;
   font-size: 72px;
-  line-height: 84px;
+  line-height: 0.7;
 }
 .content_3 .inner > div .card-box03 .shop .card-item_text .bottom .b-line {
   position: absolute;
@@ -889,7 +894,7 @@ z-index: 1;
   left:100px;
   height: 0;
   width: 1px;
-  background-color: #757575;
+  background-color: #111;
   transition: 1.6s 0.3s;
 }
 .content_3 .inner > div .card-box03.hover .shop .card-item_text .bottom .b-line {
@@ -898,12 +903,10 @@ z-index: 1;
 }
 /* 텍스트 호버시 */
 .content_3 .inner > div .card-box03 .shop .card-item_text .main_text {
-  color: #757575;
+  color: #303030;
   transition: 0.3s;
 }
-.content_3 .inner > div .card-box03 .shop .card-item_text .main_text:hover {
-  color: #303030;
- }
+
 
 /* 더보기 */
 .content_3 .inner > div .card-box03 .shop .card-item_text .bottom .more {
