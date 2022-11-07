@@ -143,11 +143,11 @@ function SliderBox2__init() {
 }
 
 function CardBoxImg__hide() {
-  $(".content_2 .inner .card-box").mouseenter(function(){
+  $(".content_2 .inner .card-box:not(.card-box03)").mouseenter(function(){
     let $this = $(this);
     $this.siblings().addClass("hide");
   });
-  $(".content_3 .inner .card-box").click(function(){
+  $(".content_3 .inner .card-box:not(.card-box03)").click(function(){
     let $this = $(this);
     $this.siblings().addClass("hide");
   });
