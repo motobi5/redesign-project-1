@@ -451,7 +451,7 @@ body {
 
 /* 서브슬라이드01 */
 .content_1 {
-  margin-top: 40px;
+  margin-top: 60px;
   width: 1200px;
   justify-content: space-between;
 }
@@ -610,7 +610,7 @@ body {
 
 /* content_2 */
 .content_2 {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .content_2-2 {
   margin-top: 10px;
@@ -639,7 +639,7 @@ body {
   gap:10px;
   justify-content: end;
 }
-.content .inner > div .card-box {
+.content:not(.content_2-3) .inner > div .card-box {
   width: 393.33px;
   height: 393.33px;
 }
@@ -660,8 +660,8 @@ overflow: hidden;
   right:0;
   top:0;
 }
-.content_2 .inner .card-box01:hover,
-.content_2 .inner .card-box02:hover {
+.content_2:not(.content_2-3) .inner .card-box01:hover,
+.content_2:not(.content_2-3) .inner .card-box02:hover {
   width: 796.67px;
 }
 
@@ -676,17 +676,11 @@ overflow: hidden;
   top:0;
 }
 .content_2-3 .inner .card-box01 {
-  right: 33.6%;
-}
-.content_2-3 .inner .card-box03 {
+  /* right: 33.6%; */
+  right:0;
+  width: 796.67px;
   height: 393.33px;
 }
-.content_2-3 .inner .card-box01:hover {
-  width: 796.67px;
-}
-/* .content_2-3 .inner .card-box01:hover + .card-box03 {
-width: 393.33px;
-} */
 
 /* 공통: 카드박스 프론트  */
 .content_2 .inner .card-box .card-box_front {
@@ -694,7 +688,7 @@ transition: 0.3s;
 opacity: 1;
 visibility: visible;
 }
-.content_2 .inner .card-box:hover:not(.card-box03) .card-box_front {
+.content_2:not(.content_2-3) .inner .card-box:hover .card-box_front {
   opacity: 0;
   visibility: hidden;
 }
@@ -719,36 +713,13 @@ transform: translate(-50%,-50%);
   /* transition: 1s; */
 }
 
-/* 여기 하기! */
-.content_2-3 .inner .card-box01 + .card-box03 .card-box_front span {
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  transition: 2s;
-}
-.content_2-3 .inner .card-box01:hover + .card-box03 .card-box_front span {
-  position: absolute;
-  top:96%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-.content_2-3 .inner .card-box:not(.card-box01) .card-box_front span:nth-child(1) {
-  left:41.4%;
-}
-.content_2-3 .inner .card-box:not(.card-box01) .card-box_front span:nth-child(3) {
-  left:59.8%;
-}
-.content_2-3 .inner .card-box:not(.card-box01) .card-box_front span img {
-  width: 50%;
-}
 /* 공통 배너 */
 .content_2 .inner .card-box .card_item .card-item_bn {
   width: 575px;
   height: 393.33px;
   transition: 0.3s;
 }
-.content_2 .inner .card-box .card_item > div {
+.content_2:not(.content_2-3) .inner .card-box .card_item > div {
  position: absolute;
  top:0;
  opacity: 0;
@@ -757,7 +728,7 @@ transform: translate(-50%,-50%);
  height:100%;
  width:100%;
 }
-.content_2 .inner .card-box:hover .card_item01 > div,
+.content_2:not(.content_2-3) .inner .card-box:hover .card_item01 > div,
 .content_2 .inner .card-box:hover .card_item02 > div{
 opacity: 1;
 visibility: visible;
@@ -832,15 +803,9 @@ height: 8px;
     object-position: 0 0;
     position:absolute;
     right:0;
-    opacity: 0;
-    visibility: hidden;
-    transition: 1.2s;
+    opacity: 1;
     }
-    .content_2-3 .inner .card-box:hover .card_item .card-item_bn a > .img-box > img {
-      opacity: 1;
-      visibility: visible;
-      /* height:580px; */
-    }
+ 
 /* 공통: 카드아이템 텍스트 */
 .content_2 .inner .card-box .card_item .card-item_text {
   padding: 40px 22px;
@@ -925,7 +890,7 @@ height: 8px;
 }
 
 /* 아트숍 */
-.content_3 .inner > div .card-box03 {
+.content_3:not(.content_2-3) .inner > div .card-box03 {
   width: 796.67px;
   height: 393.33px;
   transition: 1s;
