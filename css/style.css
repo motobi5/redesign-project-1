@@ -871,6 +871,7 @@ height: 8px;
   top: 0;
   left:0;
   transform:translateX(0%);
+  width: 393.33px;
   border: 1px dashed lightgray;
 }
 .content_3 .inner .card-box_img {
@@ -922,7 +923,7 @@ height: 8px;
     position: absolute;
     top:40px;
     left: 30px;
-    font-size: 80px;
+    font-size: 72px;
     font-weight: 500;
     font-family: 'Roboto';
     line-height: 94px;
@@ -931,16 +932,16 @@ height: 8px;
     z-index: 1;
   }
   .content_3 .inner > div .card-box .card-box_front > div > div > span:nth-child(2) {
-    left: 140px;
-    font-size: 72px;
+    left: 136px;
+    font-size: 64px;
     font-weight: 400;
     letter-spacing: -0.05em;
-    line-height: 1.35;
+    line-height: 1.55;
   }
   /* 카드박스 프론트 라인 */
   .content_3 .inner > div .card-box03 .card-box_front .b-line {
     position: absolute;
-    top:112px;
+    top:118px;
     left: 0px;
     width: 0;
     height:1px;
@@ -981,7 +982,7 @@ height: 8px;
   position: absolute;
   top:40px;
   left: 30px;
-  font-size: 80px;
+  font-size: 72px;
   font-weight: 500;
   font-family: 'Roboto';
   line-height: 0.7;
@@ -994,7 +995,7 @@ height: 8px;
  }
 .content_3 .inner > div .card-box03 .shop .card-item_text .main_text > span:nth-child(2) {
   top:110px;
-  left: 75px;
+  left: 62px;
   font-weight: 400;
   font-size: 72px;
   line-height: 0.7;
