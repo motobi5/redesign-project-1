@@ -202,6 +202,8 @@ function CardBox03Open__init() {
 
 }
 
+AOS.init();
+
 MegaMenu__init();
 SliderBox1__init();
 SliderBox2__init();

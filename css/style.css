@@ -617,7 +617,6 @@ body {
 }
 .content_2-3 {
   margin-top: 10px;
-  margin-bottom: 600px;
 }
 .content_3 {
   margin-top: 10px;
@@ -628,11 +627,13 @@ body {
   width: 1200px;
   position: relative;
 }
+
 .content_2 .inner > div{
   gap:5px;
 }
 .content_2-3 .inner > div{
   gap:5px;
+  /* height: 393.33px; */
 }
 .content_3 .inner > div{
   gap:10px;
@@ -642,6 +643,7 @@ body {
   width: 393.33px;
   height: 393.33px;
 }
+
 
 /* 공통 왼쪽: 이응노아카데미 */
 .content .inner .card-box {
@@ -664,6 +666,10 @@ overflow: hidden;
 }
 
 /* 소식/홍보 */
+.content_2-3 .inner {
+  position: relative;
+  height: 393.33px;
+}
 .content_2-3 .inner .card-box {
   position: absolute;
   right:0;
@@ -672,15 +678,15 @@ overflow: hidden;
 .content_2-3 .inner .card-box01 {
   right: 33.6%;
 }
+.content_2-3 .inner .card-box03 {
+  height: 393.33px;
+}
 .content_2-3 .inner .card-box01:hover {
   width: 796.67px;
-  height: 590px;
 }
-
-.content_2-3 .inner .card-box01:hover + .card-box03 {
-height: 590px;
-width: auto;
-}
+/* .content_2-3 .inner .card-box01:hover + .card-box03 {
+width: 393.33px;
+} */
 
 /* 공통: 카드박스 프론트  */
 .content_2 .inner .card-box .card-box_front {
@@ -719,13 +725,13 @@ transform: translate(-50%,-50%);
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  transition: 3s;
+  transition: 2s;
 }
 .content_2-3 .inner .card-box01:hover + .card-box03 .card-box_front span {
   position: absolute;
-  top:auto;
-  bottom:0;
-  transition: 1s;
+  top:96%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 .content_2-3 .inner .card-box:not(.card-box01) .card-box_front span:nth-child(1) {
   left:41.4%;
@@ -809,7 +815,7 @@ height: 8px;
 /* 공통: 이미지 */
 .content_2 .inner .card-box .card_item .card-item_bn a > .img-box > img {
   /* width: 100%; */
-  height:393px;
+  height:393.33px;
   /* 아래의 속성들이 작았다 커지는 현상을 막아준다 */
   object-fit: cover;
   object-position: 0 0;
@@ -818,8 +824,10 @@ height: 8px;
   }
   .content_2-3 .inner .card-box .card_item .card-item_bn a > .img-box > img {
     /* width: 100%; */
-    height:580;
+    margin-top: 10px;
+    height:360px;
     /* 아래의 속성들이 작았다 커지는 현상을 막아준다 */
+
     object-fit: cover;
     object-position: 0 0;
     position:absolute;
@@ -831,7 +839,7 @@ height: 8px;
     .content_2-3 .inner .card-box:hover .card_item .card-item_bn a > .img-box > img {
       opacity: 1;
       visibility: visible;
-      height:580px;
+      /* height:580px; */
     }
 /* 공통: 카드아이템 텍스트 */
 .content_2 .inner .card-box .card_item .card-item_text {
@@ -892,11 +900,12 @@ height: 8px;
   transform:translateX(-50%);
   border: 1px dashed lightgray;
 }
-/* 왜 left:0이 적용이 안될까? */
+/* 왜 left:0이 적용이 안될까? -> 트랜스폼을 0으로 되돌렸더니 제대로 적용*/
 .content_2-3 .inner .card-box_img {
   position: absolute;
   top: 0;
-  left:16.5%;
+  left:0;
+  transform:translateX(0%);
   border: 1px dashed lightgray;
 }
 .content_3 .inner .card-box_img {

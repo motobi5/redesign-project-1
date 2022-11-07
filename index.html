@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js"></script>
+  <!-- aos 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
 
   <title>Document</title>
@@ -614,7 +617,7 @@
               </div>
               <div class="card-item_bn">
                 <a href="#">
-                  <div class="img-box"><img src="image/con2/con2_9.png" alt=""></div>
+                  <div class="img-box"><img src="image/con2/Frame 118.png" alt=""></div>
                 </a>
               </div>
             </div>
@@ -630,20 +633,18 @@
           <div class="card_item card_item02">
             <div class="flex">
               <div class="card-item_bn">
-                <!-- <a href="#">
-                  <div class="img-box"><img src="image/con2/con2_7.png" alt=""></div>
-                </a> -->
               </div>
-              
               <div class="card-item_text flex flex-col">
                 <!-- <span>멤버십</span>
                 <span>이응노미술관</span>
                 <span>회원제 안내 </span> -->
               </div>
-              <div class="red_bar"></div>
             </div>
           </div>
-          <div class="card-box_front">
+          <div class="card-box_front" 
+           data-aos="fade-up"
+     data-aos-easing="ease-in-quart"
+     data-aos-duration="3000">
             <div class="bg-w">
               <span><img src="image/con2/Ellipse 2.png" alt=""></span>
               <span><img src="image/con2/Ellipse 3.png" alt=""></span>
@@ -654,6 +655,71 @@
       </div>
     </div>
   </div>
+  <div class="content_1 flex con">
+    <div class="left-box">
+      <div>
+        <div class="title">파리 이응노 레지던스</div>
+        <div class="redline"></div>
+        <span>파리이응노레지던스는 대전 지역의 청년예술가들이 국제적 감각을 기르고,
+          <br>
+          창작활동의 새로운 동력을 모색할 수 있도록 해외 프로그램과 작업공간을 지원합니다.</span>
+      </div>
+      <div>
+        <a href="#">
+          <div><span>더보기 </span>
+            <span class="icon"><i class="fa-solid fa-angles-right"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="slider-box-2">
+
+      <!-- 슬라이더 메인 컨테이너 -->
+      <div class="swiper">
+
+        <div class="swiper-wrapper">
+          <!-- 슬라이드 -->
+          <div class="swiper-slide slide01">
+            <a href="#">
+              <div class="img-box"><img src="image/sub01_card_box_kj.png" alt="sub01_card_box_kj"></div>
+              <div><span>2022 김진</span></div>
+            </a></div>
+          <div class="swiper-slide slide02">
+            <a href="#">
+              <div class="img-box"><img src="image/sub01_card_box_lkh.png" alt="sub01_card_box_lkh"></div>
+              <div><span>2022 이경희</span></div>
+            </a></div>
+          <div class="swiper-slide slide03">
+            <a href="#">
+              <div class="img-box"><img src="image/sub01_card_box_kkh.png" alt="sub01_card_box_kkh"></div>
+              <div><span>2022 김기훈</span></div>
+            </a></div>
+          <div class="swiper-slide slide04">
+            <a href="#">
+              <div class="img-box"><img src="image/sub01_card_box_lsk.png" alt="sub01_card_box_lsk"></div>
+              <div><span>2022 이서경</span></div>
+            </a></div>
+          <div class="swiper-slide slide05">
+            <a href="#">
+              <div class="img-box"><img src="image/sub01_card_box_nhk.png" alt="sub01_card_box_nhk"></div>
+              <div><span>2022 노형규</span></div>
+            </a></div>
+        </div>
+        <!-- 슬라이드 페이지 -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="navigation-wrapper">
+        <!-- 화살표 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="wh-gradation">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+
 
 </body>
 
