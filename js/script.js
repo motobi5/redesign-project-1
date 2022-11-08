@@ -202,6 +202,26 @@ function CardBox03Open__init() {
 
 }
 
+function SliderBox4__init() {
+  const swiper = new Swiper(".slider-box-4 .swiper", {
+    // Optional parameters
+    loop: true,
+    autoplay: {
+      delay: 5000, // 5초마다 슬라이드 넘김
+      disableOnInteraction : false, // 자동 재생 중 건드려도 비활성화되지 않음
+    },
+    // If we need pagination
+    pagination: {
+      el: ".slider-box-4 .swiper-pagination"
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: ".slider-box-4 .swiper-button-next",
+      prevEl: ".slider-box-4 .swiper-button-prev"
+    }
+  });
+}
+
 AOS.init();
 
 MegaMenu__init();
@@ -211,3 +231,4 @@ CardBoxImg__hide();
 CardBoxImg__show();
 SliderBox3__init();
 CardBox03Open__init();
+SliderBox4__init();
