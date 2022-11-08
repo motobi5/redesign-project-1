@@ -312,6 +312,7 @@ body {
 .slider-box-4 {
   height: 650px;
   margin-top: 60px;
+  
 }
 
 /* 하단슬라이드 */
@@ -1333,3 +1334,34 @@ height: 8px;
   color: #b7b7b7;
   line-height: 2.4;
 }
+
+/* 푸터 */
+.footer {
+  height: 350px;
+  width: 100vw;
+  background-color: #303030;
+  color:white;
+}
+.footer .inner {
+  width: 1200px;
+}
+.footer .inner > div {
+  margin-top: 60px;
+}
+.footer .inner > .logo {
+  padding-left: 20px;
+
+}
+.footer .inner > .ft_info >div {
+  text-align: center;
+}
+/* .footer .inner > .ft_info >div > div:not(:nth-child(2)) {
+  padding: 10px 0;
+} */
+.footer .inner > .ft_info >div  span {
+  margin: 6px;
+}
+
+.footer .inner > .ft_sns > div {
+  float: right;
+} 
