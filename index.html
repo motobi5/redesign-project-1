@@ -1,336 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- 테일윈드 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js"></script>
+    <!-- aos 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
 
-  <!-- 테일윈드 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js"></script>
-  <!-- aos 불러오기 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <title>Document</title>
+  </head>
 
-
-  <title>Document</title>
-</head>
-
-<body>
-  <header class="topBar">
-    <div class="inner con">
-      <div class="logo">
-        <a href="#"><img src="image/logo_w.png" alt="logo"></a>
+  <body>
+    <header class="topBar">
+      <div class="inner con">
+        <div class="logo">
+          <a href="#"><img src="image/logo_w.png" alt="logo" /></a>
+        </div>
+        <div></div>
+        <div class="topBar_right">
+          <div class="topBarTnb">
+            <a href="#">FRANCE</a>
+            <a href="#">ENGLISH</a>
+            <a href="#">MEMBERSHIP</a>
+          </div>
+          <nav class="menuBox">
+            <ul class="menuList01">
+              <li class="listItem01">
+                <a href="#">이응노</a>
+              </li>
+              <li class="listItem02">
+                <a href="#">재단·미술관소개</a>
+              </li>
+              <li class="listItem03">
+                <a href="#">전시</a>
+              </li>
+              <li class="listItem04">
+                <a href="#">이용안내</a>
+              </li>
+              <li class="listItem05">
+                <a href="#">교육/행사</a>
+              </li>
+              <li class="listItem06">
+                <a href="#">소식/홍보</a>
+              </li>
+              <li class="listItem07">
+                <a href="#">작가지원 프로그램</a>
+              </li>
+              <li class="listItem08">
+                <a href="#">소장품</a>
+              </li>
+              <li class="listItem09">
+                <a href="#">이응노연구소</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mega">
+          <div class="megaMenu megaMenu01">
+            <div class="flex">
+              <div class="img-box">
+                <img src="image/megaMenuSub01.png" alt="" />
+              </div>
+              <div class="mega_sub_txt">
+                <span>이응노</span>
+                <span>( 顧菴 李應魯 1904 - 1989 )</span>
+              </div>
+            </div>
+            <ul class="menu_item menu_item01">
+              <li><a href="#">고암연보</a></li>
+              <li><a href="#">예술세계</a></li>
+              <li><a href="#">파리동양미술학교</a></li>
+            </ul>
+          </div>
+          <div class="megaMenu megaMenu02">
+            <div class="flex">
+              <div class="img-box">
+                <img src="image/megaMenuSub02.png" alt="" />
+              </div>
+              <div class="mega_sub_txt">
+                <span>재단·미술관소개</span>
+                <span></span>
+              </div>
+            </div>
+            <ul class="menu_item menu_item02">
+              <li><a href="#">관장인사말</a></li>
+              <li><a href="#">미술관 건축물 MI</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">조직</a></li>
+              <li><a href="#">윤리경영</a></li>
+              <li><a href="#">경영공시</a></li>
+            </ul>
+          </div>
+          <div class="megaMenu megaMenu03">
+            <div class="flex">
+              <div class="img-box">
+                <img src="image/megaMenuSub03.png" alt="" />
+              </div>
+              <div class="mega_sub_txt">
+                <span>전시</span>
+                <span>이응노미술관의 전시내용을 소개합니다.</span>
+              </div>
+            </div>
+            <ul class="menu_item menu_item03">
+              <li><a href="#">현재전시</a></li>
+              <li><a href="#">과거전시</a></li>
+              <li><a href="#">전시예정</a></li>
+            </ul>
+          </div>
+          <div class="megaMenu megaMenu04">
+            <div class="flex">
+              <div class="img-box">
+                <img src="image/megaMenuSub04.png" alt="" />
+              </div>
+              <div class="mega_sub_txt">
+                <span>이용안내</span>
+                <span></span>
+              </div>
+            </div>
+            <ul class="menu_item menu_item04">
+              <li><a href="#">관람안내</a></li>
+              <li><a href="#">오시는길</a></li>
+              <li><a href="#">아트숍</a></li>
+              <li><a href="#">카페테리아</a></li>
+              <li><a href="#">멤버십안내</a></li>
+              <li><a href="#">고객의소리</a></li>
+            </ul>
+          </div>
+          <div class="megaMenu megaMenu05">
+            <div class="flex">
+              <div class="img-box">
+                <img src="image/megaMenuSub05.png" alt="" />
+              </div>
+              <div class="mega_sub_txt">
+                <span>교육/행사</span>
+                <span
+                  >이응노미술관에서는 다양한 행사와 교육프로그램을
+                  제공합니다.</span
+                >
+              </div>
+            </div>
+            <ul class="menu_item menu_item05">
+              <li><a href="#">교육프로그램</a></li>
+              <li><a href="#">이응노어린이미술대회</a></li>
+              <li><a href="#">행사</a></li>
+            </ul>
+          </div>
+          <div class="megaMenu megaMenu06">
+            <div class="flex">
+              <div class="img-box">
+                <img src="image/megaMenuSub06.png" alt="" />
+              </div>
+              <div class="mega_sub_txt">
+                <span>소식/홍보</span>
+                <span>이응노미술관 소식을 열람할 수 있습니다.</span>
+              </div>
+            </div>
+            <ul class="menu_item menu_item06">
+              <li><a href="#">미술관소식</a></li>
+              <li><a href="#">보도자료</a></li>
+              <li><a href="#">채용공고</a></li>
+              <li><a href="#">후원</a></li>
+              <li><a href="#">SNS</a></li>
+            </ul>
+          </div>
+          <div class="megaMenu megaMenu07">
+            <div class="flex">
+              <div class="img-box">
+                <img src="image/megaMenuSub07.png" alt="" />
+              </div>
+              <div class="mega_sub_txt">
+                <span>작가지원 프로그램</span>
+                <span></span>
+              </div>
+            </div>
+            <ul class="menu_item menu_item07">
+              <li><a href="#">파리이응노레지던스</a></li>
+              <li><a href="#">아트랩대전</a></li>
+            </ul>
+          </div>
+          <div class="megaMenu megaMenu08">
+            <div class="flex">
+              <div class="img-box">
+                <img src="image/megaMenuSub08.png" alt="" />
+              </div>
+              <div class="mega_sub_txt">
+                <span>소장품</span>
+                <span></span>
+              </div>
+            </div>
+            <ul class="menu_item menu_item08">
+              <li><a href="#">소장품</a></li>
+            </ul>
+          </div>
+          <div class="megaMenu megaMenu09">
+            <div class="flex">
+              <div class="img-box">
+                <img src="image/megaMenuSub09.png" alt="" />
+              </div>
+              <div class="mega_sub_txt">
+                <span>이응노연구소</span>
+                <span></span>
+              </div>
+            </div>
+            <ul class="menu_item menu_item09">
+              <li><a href="#">아카이브</a></li>
+              <li><a href="#">연구출판</a></li>
+            </ul>
+          </div>
+          <div class="bg-white"></div>
+        </div>
       </div>
-      <div></div>
-      <div class="topBar_right">
-        <div class="topBarTnb">
-          <a href="#">FRANCE</a>
-          <a href="#">ENGLISH</a>
-          <a href="#">MEMBERSHIP</a>
-        </div>
-        <nav class="menuBox">
-          <ul class="menuList01">
-            <li class="listItem01">
-              <a href="#">이응노</a>
-            </li>
-            <li class="listItem02">
-              <a href="#">재단·미술관소개</a>
-            </li>
-            <li class="listItem03">
-              <a href="#">전시</a>
-            </li>
-            <li class="listItem04">
-              <a href="#">이용안내</a>
-            </li>
-            <li class="listItem05">
-              <a href="#">교육/행사</a>
-            </li>
-            <li class="listItem06">
-              <a href="#">소식/홍보</a>
-            </li>
-            <li class="listItem07">
-              <a href="#">작가지원 프로그램</a>
-            </li>
-            <li class="listItem08">
-              <a href="#">소장품</a>
-            </li>
-            <li class="listItem09">
-              <a href="#">이응노연구소</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="mega">
-        <div class="megaMenu megaMenu01 ">
-          <div class="flex">
-            <div class="img-box">
-              <img src="image/megaMenuSub01.png" alt="">
-            </div>
-            <div class="mega_sub_txt">
-              <span>이응노</span>
-              <span>( 顧菴 李應魯 1904 - 1989 )</span>
-            </div>
-          </div>
-          <ul class="menu_item menu_item01">
-            <li><a href="#">고암연보</a></li>
-            <li><a href="#">예술세계</a></li>
-            <li><a href="#">파리동양미술학교</a></li>
-          </ul>
-        </div>
-        <div class="megaMenu megaMenu02 ">
-          <div class="flex">
-            <div class="img-box">
-              <img src="image/megaMenuSub02.png" alt="">
-            </div>
-            <div class="mega_sub_txt">
-              <span>재단·미술관소개</span>
-              <span></span>
-            </div>
-          </div>
-          <ul class="menu_item menu_item02">
-            <li><a href="#">관장인사말</a></li>
-            <li><a href="#">미술관 건축물 MI</a></li>
-            <li><a href="#">연혁</a></li>
-            <li><a href="#">조직</a></li>
-            <li><a href="#">윤리경영</a></li>
-            <li><a href="#">경영공시</a></li>
-          </ul>
-        </div>
-        <div class="megaMenu megaMenu03 ">
-          <div class="flex">
-            <div class="img-box">
-              <img src="image/megaMenuSub03.png" alt="">
-            </div>
-            <div class="mega_sub_txt">
-              <span>전시</span>
-              <span>이응노미술관의 전시내용을 소개합니다.</span>
-            </div>
-          </div>
-          <ul class="menu_item menu_item03">
-            <li><a href="#">현재전시</a></li>
-            <li><a href="#">과거전시</a></li>
-            <li><a href="#">전시예정</a></li>
-          </ul>
-        </div>
-        <div class="megaMenu megaMenu04 ">
-          <div class="flex">
-            <div class="img-box">
-              <img src="image/megaMenuSub04.png" alt="">
-            </div>
-            <div class="mega_sub_txt">
-              <span>이용안내</span>
-              <span></span>
-            </div>
-          </div>
-          <ul class="menu_item menu_item04">
-            <li><a href="#">관람안내</a></li>
-            <li><a href="#">오시는길</a></li>
-            <li><a href="#">아트숍</a></li>
-            <li><a href="#">카페테리아</a></li>
-            <li><a href="#">멤버십안내</a></li>
-            <li><a href="#">고객의소리</a></li>
-          </ul>
-        </div>
-        <div class="megaMenu megaMenu05">
-          <div class="flex">
-            <div class="img-box">
-              <img src="image/megaMenuSub05.png" alt="">
-            </div>
-            <div class="mega_sub_txt">
-              <span>교육/행사</span>
-              <span>이응노미술관에서는 다양한 행사와 교육프로그램을 제공합니다.</span>
-            </div>
-          </div>
-          <ul class="menu_item menu_item05">
-            <li><a href="#">교육프로그램</a></li>
-            <li><a href="#">이응노어린이미술대회</a></li>
-            <li><a href="#">행사</a></li>
-          </ul>
-        </div>
-        <div class="megaMenu megaMenu06 ">
-          <div class="flex">
-            <div class="img-box">
-              <img src="image/megaMenuSub06.png" alt="">
-            </div>
-            <div class="mega_sub_txt">
-              <span>소식/홍보</span>
-              <span>이응노미술관 소식을 열람할 수 있습니다.</span>
-            </div>
-          </div>
-          <ul class="menu_item menu_item06">
-            <li><a href="#">미술관소식</a></li>
-            <li><a href="#">보도자료</a></li>
-            <li><a href="#">채용공고</a></li>
-            <li><a href="#">후원</a></li>
-            <li><a href="#">SNS</a></li>
-          </ul>
-        </div>
-        <div class="megaMenu megaMenu07 ">
-          <div class="flex">
-            <div class="img-box">
-              <img src="image/megaMenuSub07.png" alt="">
-            </div>
-            <div class="mega_sub_txt">
-              <span>작가지원 프로그램</span>
-              <span></span>
-            </div>
-          </div>
-          <ul class="menu_item menu_item07">
-            <li><a href="#">파리이응노레지던스</a></li>
-            <li><a href="#">아트랩대전</a></li>
-          </ul>
-        </div>
-        <div class="megaMenu megaMenu08 ">
-          <div class="flex">
-            <div class="img-box">
-              <img src="image/megaMenuSub08.png" alt="">
-            </div>
-            <div class="mega_sub_txt">
-              <span>소장품</span>
-              <span></span>
-            </div>
-          </div>
-          <ul class="menu_item menu_item08">
-            <li><a href="#">소장품</a></li>
-          </ul>
-        </div>
-        <div class="megaMenu megaMenu09 ">
-          <div class="flex">
-            <div class="img-box">
-              <img src="image/megaMenuSub09.png" alt="">
-            </div>
-            <div class="mega_sub_txt">
-              <span>이응노연구소</span>
-              <span></span>
-            </div>
-          </div>
-          <ul class="menu_item menu_item09">
-            <li><a href="#">아카이브</a></li>
-            <li><a href="#">연구출판</a></li>
-          </ul>
-        </div>
-        <div class="bg-white"></div>
-      </div>
-    </div>
-  </header>
-  <div class="h80"></div>
-  <div class="slider-box-1">
-
-    <!-- 슬라이더 메인 컨테이너 -->
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <!-- 슬라이드 -->
-        <div class="swiper-slide slide01">
-          <div>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="img-box">
-            <img src="image/mainSlide01.png" alt="mainSlide01">
-          </div>
-          <div class="bg"></div>
-        </div>
-        <div class="swiper-slide slide02">
-          <div>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="img-box">
-            <img src="image/mainSlide02.png" alt="mainSlide02">
-          </div>
-          <div class="bg"></div>
-        </div>
-        <div class="swiper-slide slide03">
-          <div>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="img-box">
-            <img src="image/mainSlide03.png" alt="mainSlide03">
-          </div>
-          <div class="bg"></div>
-        </div>
-        <div class="swiper-slide slide04">
-          <div>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="img-box">
-            <img src="image/mainSlide04-2.png" alt="mainSlide04">
-          </div>
-          <div class="bg"></div>
-        </div>
-
-      </div>
-      <!-- 슬라이드 페이지 -->
-      <div class="navi_bar">
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-    <div class="navigation-wrapper">
-      <!-- 화살표 -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-  </div>
-  <div class="content_1 flex con">
-    <div class="left-box">
-      <div>
-        <div class="title">아트랩대전</div>
-        <div class="redline"></div>
-        <span>이응노미술관에서는 2017년부터 대전지역의 청년예술가들에게 회화, 조각, 설치, 미디어, 퍼포먼스 등
-          <br>
-          장르를 불문하고 시각예술분야의 실험적인 작업에 도전할 수 있도록 전시공간을 지원하고 있습니다. </span>
-      </div>
-      <div>
-        <a href="#">
-          <div><span>더보기 </span>
-            <span class="icon"><i class="fa-solid fa-angles-right"></i></span>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="slider-box-2">
-
+    </header>
+    <div class="h80"></div>
+    <div class="slider-box-1">
       <!-- 슬라이더 메인 컨테이너 -->
       <div class="swiper">
-
         <div class="swiper-wrapper">
           <!-- 슬라이드 -->
           <div class="swiper-slide slide01">
-            <a href="#">
-              <div class="img-box"><img src="image/sub01_card_box_kj.png" alt="sub01_card_box_kj"></div>
-              <div><span>2022 김진</span></div>
-            </a></div>
+            <div>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="img-box">
+              <img src="image/mainSlide01.png" alt="mainSlide01" />
+            </div>
+            <div class="bg"></div>
+          </div>
           <div class="swiper-slide slide02">
-            <a href="#">
-              <div class="img-box"><img src="image/sub01_card_box_lkh.png" alt="sub01_card_box_lkh"></div>
-              <div><span>2022 이경희</span></div>
-            </a></div>
+            <div>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="img-box">
+              <img src="image/mainSlide02.png" alt="mainSlide02" />
+            </div>
+            <div class="bg"></div>
+          </div>
           <div class="swiper-slide slide03">
-            <a href="#">
-              <div class="img-box"><img src="image/sub01_card_box_kkh.png" alt="sub01_card_box_kkh"></div>
-              <div><span>2022 김기훈</span></div>
-            </a></div>
+            <div>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="img-box">
+              <img src="image/mainSlide03.png" alt="mainSlide03" />
+            </div>
+            <div class="bg"></div>
+          </div>
           <div class="swiper-slide slide04">
-            <a href="#">
-              <div class="img-box"><img src="image/sub01_card_box_lsk.png" alt="sub01_card_box_lsk"></div>
-              <div><span>2022 이서경</span></div>
-            </a></div>
-          <div class="swiper-slide slide05">
-            <a href="#">
-              <div class="img-box"><img src="image/sub01_card_box_nhk.png" alt="sub01_card_box_nhk"></div>
-              <div><span>2022 노형규</span></div>
-            </a></div>
+            <div>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="img-box">
+              <img src="image/mainSlide04-2.png" alt="mainSlide04" />
+            </div>
+            <div class="bg"></div>
+          </div>
         </div>
         <!-- 슬라이드 페이지 -->
+        <div class="navi_bar"></div>
         <div class="swiper-pagination"></div>
       </div>
       <div class="navigation-wrapper">
@@ -338,460 +289,573 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-      <div class="wh-gradation">
-        <div></div>
-        <div></div>
-      </div>
     </div>
-  </div>
-  <div class="content content_2">
-    <div class="inner con">
-      <div class="flex">
-        <div class="card-box card-box_img">
+    <div class="content_1 flex con">
+      <div class="left-box">
+        <div>
+          <div class="title">아트랩대전</div>
+          <div class="redline"></div>
+          <span
+            >이응노미술관에서는 2017년부터 대전지역의 청년예술가들에게 회화,
+            조각, 설치, 미디어, 퍼포먼스 등
+            <br />
+            장르를 불문하고 시각예술분야의 실험적인 작업에 도전할 수 있도록
+            전시공간을 지원하고 있습니다.
+          </span>
+        </div>
+        <div>
           <a href="#">
-            <div class="img-box">
-              <img src="image/con2/con2_2.png" alt="">
+            <div>
+              <span>더보기 </span>
+              <span class="icon"><i class="fa-solid fa-angles-right"></i></span>
             </div>
           </a>
         </div>
-        <div class="card-box card-box01">
-          <div class="card_item card_item01">
-            <div class="flex">
-              <div class="red_bar"></div>
-              <div class="card-item_text flex flex-col">
-                <span>이응노</span>
-                <span>아카데미</span>
-              </div>
-              <div class="card-item_bn">
-                <a href="#">
-                  <div class="img-box"><img src="image/con2/con2_1.png" alt=""></div>
-                </a>
-              </div>
+      </div>
+      <div class="slider-box-2">
+        <!-- 슬라이더 메인 컨테이너 -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- 슬라이드 -->
+            <div class="swiper-slide slide01">
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="image/sub01_card_box_kj.png"
+                    alt="sub01_card_box_kj"
+                  />
+                </div>
+                <div><span>2022 김진</span></div>
+              </a>
+            </div>
+            <div class="swiper-slide slide02">
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="image/sub01_card_box_lkh.png"
+                    alt="sub01_card_box_lkh"
+                  />
+                </div>
+                <div><span>2022 이경희</span></div>
+              </a>
+            </div>
+            <div class="swiper-slide slide03">
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="image/sub01_card_box_kkh.png"
+                    alt="sub01_card_box_kkh"
+                  />
+                </div>
+                <div><span>2022 김기훈</span></div>
+              </a>
+            </div>
+            <div class="swiper-slide slide04">
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="image/sub01_card_box_lsk.png"
+                    alt="sub01_card_box_lsk"
+                  />
+                </div>
+                <div><span>2022 이서경</span></div>
+              </a>
+            </div>
+            <div class="swiper-slide slide05">
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="image/sub01_card_box_nhk.png"
+                    alt="sub01_card_box_nhk"
+                  />
+                </div>
+                <div><span>2022 노형규</span></div>
+              </a>
             </div>
           </div>
-          <div class="card-box_front">
-            <div class="bg-w">
-              <span>Arcademy</span>
-            </div>
-          </div>
-        
+          <!-- 슬라이드 페이지 -->
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="card-box card-box02">
-          <div class="card_item card_item02">
-            <div class="flex">
-              <div class="card-item_bn">
-                <a href="#">
-                  <div class="img-box"><img src="image/con2/con2_3.png" alt=""></div>
-                </a>
-              </div>
-              
-              <div class="card-item_text flex flex-col">
-                <span>아트랩대전</span>
-                <span>임승균</span>
-              </div>
-              <div class="red_bar"></div>
-            </div>
-          </div>
-          <div class="card-box_front">
-            <div class="bg-w">
-              <span>Art Lab.</span>
-            </div>
-          </div>
+        <div class="navigation-wrapper">
+          <!-- 화살표 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="wh-gradation">
+          <div></div>
+          <div></div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="content content_3">
-    <div class="inner con">
-      <div class="flex">
-        <div class="card-box card-box_img">
-          <a href="#">
-            <div class="img-box">
-              <img src="image/con2/con2_4.png" alt="">
-            </div>
-          </a>
-        </div>
-        <div class="card-box card-box03">
-       
-          <div class="card-box_front">
-            <div class="bg-w">
-              <div class="text-box">
-                <span>Art</span>
-                <span>shop</span>
-                <div class="b-line"></div>
+    <div class="content content_2">
+      <div class="inner con">
+        <div class="flex">
+          <div class="card-box card-box_img">
+            <a href="#">
+              <div class="img-box">
+                <img src="image/con2/con2_2.png" alt="" />
               </div>
-            </div>
+            </a>
           </div>
-             <!-- 슬라이드 자리 -->
-          <div class="shop flex">
-            <div class="card-item_text">
-              <div class="main_text">
-                <span>Art</span>
-                <span>shop</span>
-              </div>
-              <div class="bottom flex">
-                <div class="b-line"></div>
-                <div class="more">
+          <div class="card-box card-box01">
+            <div class="card_item card_item01">
+              <div class="flex">
+                <div class="red_bar"></div>
+                <div class="card-item_text flex flex-col">
+                  <span>이응노</span>
+                  <span>아카데미</span>
+                </div>
+                <div class="card-item_bn">
                   <a href="#">
-                    <div><span>더보기 </span>
-                      <span class="icon"><i class="fa-solid fa-angles-right"></i></span>
+                    <div class="img-box">
+                      <img src="image/con2/con2_1.png" alt="" />
                     </div>
                   </a>
                 </div>
               </div>
             </div>
-            <div class="box">
-              <div class="slider-box-3">
-
-                <!-- 슬라이더 메인 컨테이너 -->
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    <!-- 슬라이드 -->
-                    <div class="swiper-slide slide01">
-                      <a href="#">
-                        <div class="bg"></div>
-                        <div class="bg_text">
-                          <div>18,000원</div>
-                          <div>이응노 자개그립톡</div>
-                        </div>
-                        <div class="img-box">
-                          <img src="image/_shop/shop-01.png" alt="shop/shop-01">
-                        </div>
-                      </a>
+            <div class="card-box_front">
+              <div class="bg-w">
+                <span>Arcademy</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-box card-box02">
+            <div class="card_item card_item02">
+              <div class="flex">
+                <div class="card-item_bn">
+                  <a href="#">
+                    <div class="img-box">
+                      <img src="image/con2/con2_3.png" alt="" />
                     </div>
-                    <div class="swiper-slide slide02">
-                      <a href="#">
-                        <div class="bg"></div>
-                      <div class="bg_text">
-                        <div>9,500원</div>
-                        <div>이응노 머그</div>
-                      </div>
-                      <div class="img-box">
-                        <img src="image/_shop/shop-02.png" alt="shop/shop-02">
-                      </div>
-                      </a>
-                    </div>
-                    <div class="swiper-slide slide03">
-                      <a href="#">
-                        <div class="bg"></div>
-                      <div class="bg_text">
-                        <div>3,500원</div>
-                        <div>이응노 마스킹테이프</div>
-                      </div>
-                      <div class="img-box">
-                        <img src="image/_shop/shop-03.png" alt="shop/shop-03">
-                      </div>
-                      </a>
-                    </div>
-                    <div class="swiper-slide slide04">
-                      <a href="#">
-                        <div class="bg"></div>
-                      <div class="bg_text">
-                        <div>3,000원</div>
-                        <div>이응노 북마크</div>
-                      </div>
-                      <div class="img-box">
-                        <img src="image/_shop/shop-04.png" alt="shop/shop-04">
-                      </div>
-                      </a>
-                    </div>
-                    <div class="swiper-slide slide05">
-                      <a href="#">
-                        <div class="bg"></div>
-                        <div class="bg_text">
-                          <div>2,8000원</div>
-                          <div>이응노 찻잔 세트</div>
-                        </div>
-                        <div class="img-box">
-                          <img src="image/_shop/shop-05.png" alt="shop/shop-05">
-                        </div>
-                      </a>
-                     
-                      
-                    </div>
-                  </div>
-                  <!-- 슬라이드 페이지 -->
-                  <div class="swiper-pagination"></div>
-
-                  <div class="navigation-wrapper">
-                    <!-- 화살표 -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div> 
-                  </div>
-              
-                    
-                  
+                  </a>
                 </div>
-              
+
+                <div class="card-item_text flex flex-col">
+                  <span>아트랩대전</span>
+                  <span>임승균</span>
+                </div>
+                <div class="red_bar"></div>
               </div>
             </div>
-           
-          
+            <div class="card-box_front">
+              <div class="bg-w">
+                <span>Art Lab.</span>
+              </div>
+            </div>
           </div>
-
-
         </div>
-        
       </div>
     </div>
-  </div>
-  <div class="content content_2 content_2-2">
-    <div class="inner con">
-      <div class="flex">
-        <div class="card-box card-box_img">
+    <div class="content content_3">
+      <div class="inner con">
+        <div class="flex">
+          <div class="card-box card-box_img">
+            <a href="#">
+              <div class="img-box">
+                <img src="image/con2/con2_4.png" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="card-box card-box03">
+            <div class="card-box_front">
+              <div class="bg-w">
+                <div class="text-box">
+                  <span>Art</span>
+                  <span>shop</span>
+                  <div class="b-line"></div>
+                </div>
+              </div>
+            </div>
+            <!-- 슬라이드 자리 -->
+            <div class="shop flex">
+              <div class="card-item_text">
+                <div class="main_text">
+                  <span>Art</span>
+                  <span>shop</span>
+                </div>
+                <div class="bottom flex">
+                  <div class="b-line"></div>
+                  <div class="more">
+                    <a href="#">
+                      <div>
+                        <span>더보기 </span>
+                        <span class="icon"
+                          ><i class="fa-solid fa-angles-right"></i
+                        ></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="slider-box-3">
+                  <!-- 슬라이더 메인 컨테이너 -->
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <!-- 슬라이드 -->
+                      <div class="swiper-slide slide01">
+                        <a href="#">
+                          <div class="bg"></div>
+                          <div class="bg_text">
+                            <div>18,000원</div>
+                            <div>이응노 자개그립톡</div>
+                          </div>
+                          <div class="img-box">
+                            <img
+                              src="image/_shop/shop-01.png"
+                              alt="shop/shop-01"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide slide02">
+                        <a href="#">
+                          <div class="bg"></div>
+                          <div class="bg_text">
+                            <div>9,500원</div>
+                            <div>이응노 머그</div>
+                          </div>
+                          <div class="img-box">
+                            <img
+                              src="image/_shop/shop-02.png"
+                              alt="shop/shop-02"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide slide03">
+                        <a href="#">
+                          <div class="bg"></div>
+                          <div class="bg_text">
+                            <div>3,500원</div>
+                            <div>이응노 마스킹테이프</div>
+                          </div>
+                          <div class="img-box">
+                            <img
+                              src="image/_shop/shop-03.png"
+                              alt="shop/shop-03"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide slide04">
+                        <a href="#">
+                          <div class="bg"></div>
+                          <div class="bg_text">
+                            <div>3,000원</div>
+                            <div>이응노 북마크</div>
+                          </div>
+                          <div class="img-box">
+                            <img
+                              src="image/_shop/shop-04.png"
+                              alt="shop/shop-04"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide slide05">
+                        <a href="#">
+                          <div class="bg"></div>
+                          <div class="bg_text">
+                            <div>2,8000원</div>
+                            <div>이응노 찻잔 세트</div>
+                          </div>
+                          <div class="img-box">
+                            <img
+                              src="image/_shop/shop-05.png"
+                              alt="shop/shop-05"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- 슬라이드 페이지 -->
+                    <div class="swiper-pagination"></div>
+
+                    <div class="navigation-wrapper">
+                      <!-- 화살표 -->
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content content_2 content_2-2">
+      <div class="inner con">
+        <div class="flex">
+          <div class="card-box card-box_img">
+            <a href="#">
+              <div class="img-box">
+                <img src="image/con2/con2_6.png" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="card-box card-box01">
+            <div class="card_item card_item01">
+              <div class="flex">
+                <div class="red_bar"></div>
+                <div class="card-item_text flex flex-col">
+                  <span>구글 아트 앤 컬쳐</span>
+                  <span>g.co/leeungno</span>
+                </div>
+                <div class="card-item_bn">
+                  <a href="#">
+                    <div class="line greenline"></div>
+                    <div class="line blueline"></div>
+                    <div class="line redline"></div>
+                    <div class="img-box">
+                      <img src="image/con2/con2_5.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card-box_front">
+              <div class="bg-w">
+                <span>Google Arts<br />& Culture</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-box card-box02">
+            <div class="card_item card_item02">
+              <div class="flex">
+                <div class="card-item_bn">
+                  <a href="#">
+                    <div class="img-box">
+                      <img src="image/con2/con2_7.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+
+                <div class="card-item_text flex flex-col">
+                  <span>멤버십</span>
+                  <span>이응노미술관</span>
+                  <span>회원제 안내 </span>
+                </div>
+                <div class="red_bar"></div>
+              </div>
+            </div>
+            <div class="card-box_front">
+              <div class="bg-w">
+                <span>Membership</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content content_2 content_2-3">
+      <div class="inner con">
+        <div class="flex">
+          <div class="card-box card-box_img">
+            <a href="#">
+              <div class="img-box">
+                <img src="image/con2/con2_8.png" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="card-box card-box01">
+            <div class="card_item card_item01">
+              <div class="flex">
+                <div class="red_bar"></div>
+                <div class="card-item_text flex flex-col">
+                  <span>소식/홍보</span>
+                  <span>2022</span>
+                  <span>파리이응노레지던스<br />파리 전시 개최</span>
+                </div>
+                <div class="card-item_bn">
+                  <a href="#">
+                    <div class="img-box">
+                      <img src="image/con2/Frame 118.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content_1 flex con">
+      <div class="left-box">
+        <div>
+          <div class="title">파리 이응노 레지던스</div>
+          <div class="redline"></div>
+          <span
+            >파리이응노레지던스는 대전 지역의 청년예술가들이 국제적 감각을
+            기르고,
+            <br />
+            창작활동의 새로운 동력을 모색할 수 있도록 해외 프로그램과 작업공간을
+            지원합니다.</span
+          >
+        </div>
+        <div>
           <a href="#">
-            <div class="img-box">
-              <img src="image/con2/con2_6.png" alt="">
+            <div>
+              <span>더보기 </span>
+              <span class="icon"><i class="fa-solid fa-angles-right"></i></span>
             </div>
           </a>
         </div>
-        <div class="card-box card-box01">
-          <div class="card_item card_item01">
-            <div class="flex">
-              <div class="red_bar"></div>
-              <div class="card-item_text flex flex-col">
-                <span>구글 아트 앤 컬쳐</span>
-                <span>g.co/leeungno</span>
-              </div>
-              <div class="card-item_bn">
-                <a href="#">
-                  <div class="line greenline"></div>
-                  <div class="line blueline"></div>
-                  <div class="line redline"></div>
-                  <div class="img-box"><img src="image/con2/con2_5.png" alt=""></div>
-                </a>
-              </div>
+      </div>
+      <div class="slider-box-2">
+        <!-- 슬라이더 메인 컨테이너 -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- 슬라이드 -->
+            <div class="swiper-slide slide01">
+              <a href="#">
+                <div class="img-box">
+                  <img src="image/subSlide-2/card_box.png" alt="card_box" />
+                </div>
+                <div><span>고암 아카데미</span></div>
+              </a>
+            </div>
+            <div class="swiper-slide slide02">
+              <a href="#">
+                <div class="img-box">
+                  <img src="image/subSlide-2/card_box-1.png" alt="card_box-1" />
+                </div>
+                <div><span>고암 아뜰리에</span></div>
+              </a>
+            </div>
+            <div class="swiper-slide slide03">
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="image/subSlide-2/card_box-2.png"
+                    alt="card_box-2.png"
+                  />
+                </div>
+                <div><span>파리 이응노레지던스</span></div>
+              </a>
+            </div>
+            <div class="swiper-slide slide04">
+              <a href="#">
+                <div class="img-box">
+                  <img src="image/subSlide-2/card_box-3.png" alt="card_box-3" />
+                </div>
+                <div><span>고암 서방</span></div>
+              </a>
+            </div>
+            <div class="swiper-slide slide05">
+              <a href="#">
+                <div class="img-box">
+                  <img src="image/subSlide-2/card_box-4.png" alt="card_box-4" />
+                </div>
+                <div><span>박인경화백 작업실</span></div>
+              </a>
             </div>
           </div>
-          <div class="card-box_front">
-            <div class="bg-w">
-              <span>Google Arts<br>& Culture</span>
-            </div>
-          </div>
-        
+          <!-- 슬라이드 페이지 -->
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="card-box card-box02">
-          <div class="card_item card_item02">
-            <div class="flex">
-              <div class="card-item_bn">
-                <a href="#">
-                  <div class="img-box"><img src="image/con2/con2_7.png" alt=""></div>
-                </a>
-              </div>
-              
-              <div class="card-item_text flex flex-col">
-                <span>멤버십</span>
-                <span>이응노미술관</span>
-                <span>회원제 안내 </span>
-              </div>
-              <div class="red_bar"></div>
-            </div>
-          </div>
-          <div class="card-box_front">
-            <div class="bg-w">
-              <span>Membership</span>
-            </div>
-          </div>
+        <div class="navigation-wrapper">
+          <!-- 화살표 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="wh-gradation">
+          <div></div>
+          <div></div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="content content_2 content_2-3">
-    <div class="inner con">
-      <div class="flex">
-        <div class="card-box card-box_img">
-          <a href="#">
-            <div class="img-box">
-              <img src="image/con2/con2_8.png" alt="">
-            </div>
-          </a>
+    <div class="slider-box-4">
+      <div class="slider-box-4_title">
+        <div class="slider-box-4_title_text">
+          <div>이응노미술관 미디어 파사드:</div>
+          <div>이응노, 하얀 밤 그리고 빛</div>
         </div>
-        <div class="card-box card-box01">
-          <div class="card_item card_item01">
-            <div class="flex">
-              <div class="red_bar"></div>
-              <div class="card-item_text flex flex-col">
-                <span>소식/홍보</span>
-                <span>2022</span>
-                <span>파리이응노레지던스<br>파리 전시 개최</span>
-              </div>
-              <div class="card-item_bn">
-                <a href="#">
-                  <div class="img-box"><img src="image/con2/Frame 118.png" alt=""></div>
-                </a>
-              </div>
-            </div>
-          </div>
-  
-        
-        </div>
-     
       </div>
-    </div>
-  </div>
-  <div class="content_1 flex con">
-    <div class="left-box">
-      <div>
-        <div class="title">파리 이응노 레지던스</div>
-        <div class="redline"></div>
-        <span>파리이응노레지던스는 대전 지역의 청년예술가들이 국제적 감각을 기르고,
-          <br>
-          창작활동의 새로운 동력을 모색할 수 있도록 해외 프로그램과 작업공간을 지원합니다.</span>
-      </div>
-      <div>
-        <a href="#">
-          <div><span>더보기 </span>
-            <span class="icon"><i class="fa-solid fa-angles-right"></i></span>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="slider-box-2">
+      <div class="bg-red"></div>
 
       <!-- 슬라이더 메인 컨테이너 -->
       <div class="swiper">
-
         <div class="swiper-wrapper">
           <!-- 슬라이드 -->
-          <div class="swiper-slide slide01">
-            <a href="#">
-              <div class="img-box"><img src="image/subSlide-2/card_box.png" alt="card_box"></div>
-              <div><span>고암 아카데미</span></div>
-            </a></div>
-          <div class="swiper-slide slide02">
-            <a href="#">
-              <div class="img-box"><img src="image/subSlide-2/card_box-1.png" alt="card_box-1"></div>
-              <div><span>고암 아뜰리에</span></div>
-            </a></div>
-          <div class="swiper-slide slide03">
-            <a href="#">
-              <div class="img-box"><img src="image/subSlide-2/card_box-2.png" alt="card_box-2.png"></div>
-              <div><span>파리 이응노레지던스</span></div>
-            </a></div>
-          <div class="swiper-slide slide04">
-            <a href="#">
-              <div class="img-box"><img src="image/subSlide-2/card_box-3.png" alt="card_box-3"></div>
-              <div><span>고암 서방</span></div>
-            </a></div>
-          <div class="swiper-slide slide05">
-            <a href="#">
-              <div class="img-box"><img src="image/subSlide-2/card_box-4.png" alt="card_box-4"></div>
-              <div><span>박인경화백 작업실</span></div>
-            </a></div>
+          <div class="swiper-slide slide01"></div>
+          <div class="swiper-slide slide02"></div>
+          <div class="swiper-slide slide03"></div>
         </div>
         <!-- 슬라이드 페이지 -->
-        <div class="swiper-pagination"></div>
       </div>
+
       <div class="navigation-wrapper">
+        <div class="swiper-pagination"></div>
         <!-- 화살표 -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-      <div class="wh-gradation">
-        <div></div>
-        <div></div>
-      </div>
     </div>
-  </div>
-  <div class="slider-box-4">
-    <div class="slider-box-4_title">
-      <div class="slider-box-4_title_text">
-        <div>이응노미술관 미디어 파사드:</div>
-        <div>이응노, 하얀 밤 그리고 빛</div>
-      </div>
-    </div>
-    <div class="bg-red"></div>
-   
-    <!-- 슬라이더 메인 컨테이너 -->
-    <div class="swiper">
-   
-  
-      <div class="swiper-wrapper">
-
-        
-       
-        <!-- 슬라이드 -->
-        <div class="swiper-slide slide01">
-         
-        </div>
-        <div class="swiper-slide slide02">
-        </div>
-        <div class="swiper-slide slide03">
-        </div>
-
-      </div>
-      <!-- 슬라이드 페이지 -->
-
-    </div>
-
-    <div class="navigation-wrapper">
-      <div class="swiper-pagination"></div>
-      <!-- 화살표 -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-  </div>
-  <section class="intro">
-    <div class="inner">
-      <div class="text-box">
-          <div class="title"><span>LEEUNGNO</span>M<span style="color:#CF112B;">U</span>SEUM</div>
+    <section class="intro">
+      <div class="inner">
+        <div class="text-box">
+          <div class="title">
+            <span>LEEUNGNO</span>M<span style="color: #cf112b">U</span>SEUM
+          </div>
           <div class="redline"></div>
-          <span>미술관은 전시 작품이 가장 돋보일 수 있도록 설계돼야 하지만 그 자체만으로도 완벽한 예술작품이어야 합니다.
-            <br>
-            이응노 선생의 작품 세계를 온전히 반영하는 미술관이 될 것을 확신합니다.
-         </span>
-         <span>-Laurent Beaudouin-</span>
+          <span
+            >미술관은 전시 작품이 가장 돋보일 수 있도록 설계돼야 하지만 그
+            자체만으로도 완벽한 예술작품이어야 합니다.
+            <br />
+            이응노 선생의 작품 세계를 온전히 반영하는 미술관이 될 것을
+            확신합니다.
+          </span>
+          <span>-Laurent Beaudouin-</span>
+        </div>
       </div>
-    </div>
-   
-  </section>
-  <section class="footer">
-    <a href="#" class="top show __footer-bottom"><i class="top__icon fa-solid fa-arrow-up-long"></i></a>
-    <div class="inner con git commit flex">
-      <div class="logo flex flex-1">
-        <a href="#"><img src="image/logo_b.png" alt="logo_b"></a>
-      </div>
-      <div class="ft_info grow">
-        <div>
-          <div>(재)대전고암미술문화재단</div>
+    </section>
+    <section class="footer">
+      <a href="#" class="top show __footer-bottom"
+        ><i class="top__icon fa-solid fa-arrow-up-long"></i
+      ></a>
+      <div class="inner con git commit flex">
+        <div class="logo flex flex-1">
+          <a href="#"><img src="image/logo_b.png" alt="logo_b" /></a>
+        </div>
+        <div class="ft_info grow">
           <div>
-            <span>(35204) 대전광역시 서구 둔산대로 157</span>
-            <span>Tel:042) 611-9800</span>
-            <span>Fax:042)611-9819</span>
+            <div>(재)대전고암미술문화재단</div>
+            <div>
+              <span>(35204) 대전광역시 서구 둔산대로 157</span>
+              <span>Tel:042) 611-9800</span>
+              <span>Fax:042)611-9819</span>
+            </div>
+            <div>
+              <span>사업자등록 번호:314-82-15539</span>
+              <span>통신판매업 신고번호:제 2017-대전서구-0403</span>
+            </div>
+            <div>COPYRIGHT © LEEUNGNO MUSEUM. ALL RIGHTS RESERVED.</div>
+          </div>
+        </div>
+        <div class="ft_sns flex-1">
+          <div class="flex">
+            <a href="#">
+              <img src="image/footer/Frame 29.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="image/footer/Frame 30.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="image/footer/Frame 31.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="image/footer/Frame 32.svg" alt="" />
+            </a>
           </div>
           <div>
-            <span>사업자등록 번호:314-82-15539</span>
-            <span>통신판매업 신고번호:제 2017-대전서구-0403</span>
+            <span>Content Us</span>
+            <a href="#">휘트니비엔날레</a>
           </div>
-          <div>COPYRIGHT © LEEUNGNO MUSEUM. ALL RIGHTS RESERVED.</div>
-        </div>
-      
-      </div>
-      <div class="ft_sns flex-1">
-        <div class="flex">
-          <a href="#">
-            <img src="image/footer/Frame 29.svg" alt="">
-          </a>
-          <a href="#">
-            <img src="image/footer/Frame 30.svg" alt="">
-          </a>
-          <a href="#">
-            <img src="image/footer/Frame 31.svg" alt="">
-          </a>
-          <a href="#">
-           <img src="image/footer/Frame 32.svg" alt="">
-          </a>
-        </div>
-        <div>
-          <span>Content Us</span>
-          <a href="#">휘트니비엔날레</a>
         </div>
       </div>
-    </div>
-  </section>
-
-
-
-</body>
-
+    </section>
+  </body>
 </html>
