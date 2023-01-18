@@ -1430,18 +1430,20 @@ height: 8px;
   width: 300px;
   justify-content: end;
   float: right;
-  /* border:3px solid red; */
-  gap:6px; 
   margin-bottom: 10px;
+  /* border:3px solid red; */
 }
 .footer .inner > .ft_sns > div:nth-child(1) a {
+  width: 28px;
+  margin-left: 6px;
+  display: flex;
+  justify-content: end;;
   /* border-radius: 555px; */
   /* border: 1px solid red; */
   -webkit-filter: brightness(0) invert(1); 
 filter: brightness(0) invert(1);
 }
 .footer .inner > .ft_sns > div:nth-child(1) a img {
-
   height: 100%;
   /* BORDER:3px solid red; */
 }
